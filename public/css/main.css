@@ -51,6 +51,26 @@
  * # base style overrides
  *
  * ------------------------------------------------------------------- */
+
+
+ /* custom */
+.header.under-construction {
+  height: 2.5rem;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+}
+
+a.site-logo {
+  font-size: xx-large;
+  font-weight: 550;
+  color: white;
+  text-align: center;
+}
+
 html {
   font-size: 10px;
 }

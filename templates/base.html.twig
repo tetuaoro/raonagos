@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Rao Nagos - Création de site web">
-		<meta name="author" content="Lenoir Tetuaoro">
+		<meta name="description" content="Rao Nagos - Créateur de site web, digital designer et blockchain. Portfolio de Tetuaoro Lenoir.">
+		<meta name="author" content="Tetuaoro Lenoir">
 		<title>
-			{% block title %}Rao Nagos
+			{% block title %}Rao Nagos - Tetuaoro Lenoir - Portfolio
 			{% endblock %}
 		</title>
 
@@ -19,11 +19,21 @@
 
 		<link rel="apple-touch-icon" sizes="180x180" href="{{asset('apple-touch-icon.png')}}">
 		<link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-32x32.png')}}">
-		<link rel="icon" type="image/png" sizes="16x16" href="f{{asset('avicon-16x16.png')}}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-16x16.png')}}">
 		<link rel="manifest" href="{{asset('site.webmanifest')}}">
         
         {% block stylesheets %}{% endblock %}
         {% block javascripts %}{% endblock %}
+
+		<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Corporation",
+      "legalName":"Rao Nagos",
+      "url": "http://www.rao-nagos.pf",
+      "logo": "http://www.rao-nagos.pf/android-chrome-512x512.png"
+    }
+    </script>
         
 		</head>
 		<body id="top">
@@ -31,6 +41,9 @@
 			<div id="preloader">
 				<div id="loader"></div>
 			</div>
+
+			<div class="header under-construction">Under Construction</div>
+
 			{% block body %}{% endblock %}
 		</body>
 	</html>

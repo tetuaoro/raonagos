@@ -6,8 +6,8 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="{{asset('images/logo.svg')}}" alt="Homepage">
+            <a class="site-logo" href="{{path('app_index')}}">
+                RNTL
             </a>
         </div>
 
@@ -40,11 +40,11 @@
         <div class="row intro-content">
 
             <div class="column large-9 mob-full intro-text">
-                <h3>Hello, I'm John Doe</h3>
+                <h3>Hello, I'm Tetuaoro Lenoir</h3>
                 <h1>
                     Digital Designer <br>
                     and Web Developer <br>
-                    Based In Somewhere.
+                    Based In French Polynesia.
                 </h1>
             </div>
 
@@ -370,7 +370,7 @@
                         <div class="item-folio__thumb">
                             <a href="{{asset('images/portfolio/gallery/g-city-building.jpg')}}" class="thumb-link" title="Shutterbug" data-size="1050x700">
                                 <img src="{{asset('images/portfolio/city-building.jpg')}}" 
-                                     srcset="images/portfolio/city-building.jpg 1x, images/portfolio/city-building@2x.jpg 2x" alt="">
+                                     srcset="{{asset('images/portfolio/city-building.jpg') ~ ' 1x, ' ~ asset('images/portfolio/city-building@2x.jpg') ~ ' 2x'}}" alt="">
                             </a>    
                             <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
                         </div>
@@ -395,7 +395,7 @@
                         <div class="item-folio__thumb">
                             <a href="{{asset('images/portfolio/gallery/g-woodcraft.jpg')}}" class="thumb-link" title="Woodcraft" data-size="1050x700">
                                 <img src="{{asset('images/portfolio/woodcraft.jpg')}}" 
-                                     srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                                     srcset="{{asset('images/portfolio/woodcraft.jpg') ~ ' 1x, ' ~ asset('images/portfolio/woodcraft@2x.jpg') ~ ' 2x'}}" alt="">
                             </a>
                             <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
                         </div>
@@ -419,7 +419,7 @@
                         <div class="item-folio__thumb">
                             <a href="{{asset('images/portfolio/gallery/g-beetle.jpg')}}" class="thumb-link" title="The Beetle Car" data-size="1050x700">
                                 <img src="{{asset('images/portfolio/the-beetle.jpg')}}"
-                                     srcset="images/portfolio/the-beetle.jpg 1x, images/portfolio/the-beetle@2x.jpg 2x" alt="">
+                                     srcset="{{asset('images/portfolio/the-beetle.jpg') ~ ' 1x, ' ~ asset('images/portfolio/the-beetle@2x.jpg') ~ ' 2x'}}" alt="">
                             </a>
                             <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
                         </div>
@@ -442,7 +442,7 @@
                         <div class="item-folio__thumb">
                             <a href="{{asset('images/portfolio/gallery/g-shutterbug.jpg')}}" class="thumb-link" title="Grow Green" data-size="1050x700">
                                 <img src="{{asset('images/portfolio/shutterbug.jpg')}}" 
-                                     srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                                     srcset="{{asset('images/portfolio/shutterbug.jpg') ~ ' 1x, ' ~ asset('images/portfolio/shutterbug@2x.jpg') ~  ' 2x'}}" alt="">
                             </a>
                             <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
                         </div>
@@ -466,7 +466,7 @@
                         <div class="item-folio__thumb">
                             <a href="{{asset('images/portfolio/gallery/g-lamp.jpg')}}" class="thumb-link" title="Guitarist" data-size="1050x700">
                                 <img src="{{asset('images/portfolio/lamp.jpg')}}" 
-                                     srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
+                                     srcset="{{asset('images/portfolio/lamp.jpg') ~ ' 1x, ' ~ asset('images/portfolio/lamp@2x.jpg') ~ ' 2x'}}" alt="">
                             </a>
                             <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
                         </div>
@@ -490,7 +490,7 @@
                         <div class="item-folio__thumb">
                             <a href="{{asset('images/portfolio/gallery/g-fuji.jpg')}}" class="thumb-link" title="Palmeira" data-size="1050x700">
                                 <img src="{{asset('images/portfolio/fuji.jpg')}}"
-                                     srcset="images/portfolio/fuji.jpg 1x, images/portfolio/fuji@2x.jpg 2x" alt="">
+                                     srcset="{{asset('images/portfolio/fuji.jpg') ~ ' 1x, ' ~ asset('images/portfolio/fuji@2x.jpg') ~ ' 2x'}}" alt="">
                             </a>
                             <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
                         </div>

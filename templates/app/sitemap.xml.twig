@@ -1,0 +1,10 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemalocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	{% set date = "now"|date('c') %}
+    {% for url in urls %}
+		<url>
+			<loc>{{url.loc}}</loc>
+			<lastmod>{{date}}</lastmod>
+			<priority>{{url.priority}}</priority>
+		</url>
+	{% endfor %}
+</urlset>

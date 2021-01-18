@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Rao Nagos - Créateur de site web, digital designer et blockchain. Portfolio de Tetuaoro Lenoir.">
+		<meta name="description" content="Rao Nagos - Créateur de site web, digital designer et plus. Je m'appelle Tetuaoro Lenoir et suis developpeur fullstack en Polynésie Française.">
 		<meta name="author" content="Tetuaoro Lenoir">
 		<title>
-			{% block title %}Rao Nagos - Tetuaoro Lenoir - Portfolio
+			{% block title %}Rao Nagos - Tetuaoro Lenoir | Portfolio
 			{% endblock %}
 		</title>
 
@@ -26,14 +26,31 @@
         {% block javascripts %}{% endblock %}
 
 		<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Corporation",
-      "legalName":"Rao Nagos",
-      "url": "http://www.rao-nagos.pf",
-      "logo": "http://www.rao-nagos.pf/android-chrome-512x512.png"
-    }
-    </script>
+			{
+				"@context": "https://schema.org",
+				"@type": "Corporation",
+				"legalName":"Rao Nagos",
+				"url": "http://www.rao-nagos.pf",
+				"logo": "http://www.rao-nagos.pf/android-chrome-512x512.png",
+				"founder": {
+					"@type": "Person",
+					"familyName": "Lenoir",
+					"givenName": "Tetuaoro",
+					"birthDate": "1995-11-05T06:19:36Z"
+				},
+				"foundingLocation": {
+					"@type": "Place",
+					"address": {
+						"@type": "PostalAddress",
+						"addressCountry": "PF",
+						"postalCode": "98711",
+						"addressRegion": "Paea",
+						"addressLocality": "vallée Orofero"
+					}
+				},
+				"foundingDate": "2020-07-24T06:19:36Z"
+			}
+		</script>
         
 		</head>
 		<body id="top">
@@ -45,5 +62,10 @@
 			<div class="header under-construction">Under Construction</div>
 
 			{% block body %}{% endblock %}
+
+
+			<script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
+			<script src="{{asset('js/plugins.js')}}"></script>
+			<script src="{{asset('js/main.js')}}"></script>
 		</body>
 	</html>

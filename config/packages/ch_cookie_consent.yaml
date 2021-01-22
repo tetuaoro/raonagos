@@ -1,0 +1,5 @@
+ch_cookie_consent: 
+    categories: ['session']
+    theme: 'light'
+    position: 'bottom'
+    simplified: true

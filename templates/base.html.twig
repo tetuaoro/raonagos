@@ -9,22 +9,14 @@
 			{% block title %}Rao Nagos - Tetuaoro Lenoir | Portfolio
 			{% endblock %}
 		</title>
-
 		<link rel="preload" as="style" href="{{asset('css/font-awesome/css/fontawesome-all.min.css')}}">
-		<link rel="stylesheet" href="{{asset('css/base.css')}}">
-		<link rel="stylesheet" href="{{asset('css/vendor.css')}}">
-		<link rel="stylesheet" href="{{asset('css/main.css')}}">
-
-		<script src="{{asset('js/modernizr.js')}}"></script>
-		<script src="{{asset('js/pace.min.js')}}"></script>
-
 		<link rel="apple-touch-icon" sizes="180x180" href="{{asset('apple-touch-icon.png')}}">
 		<link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-32x32.png')}}">
 		<link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-16x16.png')}}">
 		<link rel="manifest" href="{{asset('site.webmanifest')}}">
-        
-        {% block stylesheets %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+		
+		{{ encore_entry_link_tags('app') }}
+		{% block stylesheets %}{% endblock %}
 
 		<script type="application/ld+json">
 			{
@@ -52,21 +44,21 @@
 				"foundingDate": "2020-07-24T06:19:36Z"
 			}
 		</script>
-        
-		</head>
-		<body id="top">
 
-			<div id="preloader">
-				<div id="loader"></div>
-			</div>
+	</head>
+	<body id="top" data-controller="hello">
 
-			<div class="header under-construction">Under Construction</div>
+		<div id="preloader">
+			<div id="loader"></div>
+		</div>
 
-			{% block body %}{% endblock %}
+		<div data-controller="hello" class="header under-construction">Under Construction</div>
 
+		{% block body %}{% endblock %}
+		{% block javascripts %}{% endblock %}
 
-			<script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
-			<script src="{{asset('js/plugins.js')}}"></script>
-			<script src="{{asset('js/main.js')}}"></script>
-		</body>
-	</html>
+		{{ encore_entry_script_tags('app') }}
+		{{ render_esi(path('ch_cookie_consent.show_if_cookie_consent_not_set', { 'locale' : app.request.locale })) }}
+
+	</body>
+</html>

@@ -1425,12 +1425,12 @@ input::-moz-focus-inner {
 }
 
 .pgn__prev {
-  background-image: url("../images/icons/icon-arrow-left.svg");
+  background-image: url("/images/icons/icon-arrow-left.svg");
   left: 0;
 }
 
 .pgn__next {
-  background-image: url("../images/icons/icon-arrow-right.svg");
+  background-image: url("/images/icons/icon-arrow-right.svg");
   right: 0;
 }
 
@@ -1947,7 +1947,7 @@ input::-moz-focus-inner {
   background-color: #02182c;
   background-repeat: no-repeat;
   background-position: top center;
-  background-image: url(../images/hero-pic.jpg);
+  background-image: url("/images/hero-pic.jpg");
   background-size: cover;
   position: absolute;
   top: 20%;
@@ -1968,7 +1968,7 @@ input::-moz-focus-inner {
 }
 
 .intro-grid {
-  background-image: url(../images/pattern-dot-grid.svg);
+  background-image: url("/images/pattern-dot-grid.svg");
   background-size: 24px 24px;
   opacity: .15;
   position: absolute;
@@ -2291,11 +2291,11 @@ input::-moz-focus-inner {
 }
 
 .timeline__icon--work {
-  background-image: url(../images/icons/icon-briefcase.svg);
+  background-image: url("/images/icons/icon-briefcase.svg");
 }
 
 .timeline__icon--education {
-  background-image: url(../images/icons/icon-education.svg);
+  background-image: url("/images/icons/icon-education.svg");
 }
 
 .timeline__block {
@@ -2530,7 +2530,7 @@ input::-moz-focus-inner {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(../images/services-bg.jpg);
+  background-image: url("/images/services-bg.jpg");
   color: rgba(255, 255, 255, 0.7);
   position: relative;
 }
@@ -2821,7 +2821,7 @@ input::-moz-focus-inner {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 80%;
-  background-image: url(../images/icons/icon-plus.svg);
+  background-image: url("/images/icons/icon-plus.svg");
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translate3d(-50%, -50%, 0);
@@ -2844,7 +2844,7 @@ input::-moz-focus-inner {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 30%;
-  background-image: url(../images/icons/icon-link.svg);
+  background-image: url("/images/icons/icon-link.svg");
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
   z-index: 2;
@@ -3527,7 +3527,7 @@ footer a:visited {
   transition: all .3s;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/icons/icon-arrow-up.svg);
+  background-image: url("/images/icons/icon-arrow-up.svg");
   background-size: 10px 16px;
   position: relative;
 }

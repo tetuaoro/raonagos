@@ -14,6 +14,8 @@ import "./styles/main.css";
 
 import "./epitome/js/modernizr";
 import "./epitome/js/pace";
+import "./epitome/js/lazysizes";
+import "./epitome/js/unveilhooks";
 import "./epitome/js/main";
 
 // start the Stimulus application

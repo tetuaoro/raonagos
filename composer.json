@@ -9,6 +9,7 @@
         "ext-iconv": "*",
         "connectholland/cookie-consent-bundle": "^0.9.6",
         "doctrine/annotations": "^1.11",
+        "symfony/apache-pack": "^1.0",
         "symfony/asset": "5.2.*",
         "symfony/console": "5.2.*",
         "symfony/dotenv": "5.2.*",

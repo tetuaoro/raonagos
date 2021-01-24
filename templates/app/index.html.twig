@@ -232,7 +232,7 @@
 
     <!-- services
     ================================================== -->
-    <section id="services" class="s-services ss-dark target-section">
+    <section id="services" class="s-services ss-dark target-section lazyload" data-bg="{{asset('images/services-bg.jpg')}}">
 
         <div class="shadow-overlay"></div>
 
@@ -369,8 +369,8 @@
                     <div class="item-folio">
                         <div class="item-folio__thumb">
                             <a href="{{asset('images/portfolio/gallery/g-city-building.jpg')}}" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                                <img src="{{asset('images/portfolio/city-building.jpg')}}" 
-                                     srcset="{{asset('images/portfolio/city-building.jpg') ~ ' 1x, ' ~ asset('images/portfolio/city-building@2x.jpg') ~ ' 2x'}}" alt="">
+                                <img class="lazyload" data-src="{{asset('images/portfolio/city-building.jpg')}}" 
+                                     data-srcset="{{asset('images/portfolio/city-building.jpg') ~ ' 1x, ' ~ asset('images/portfolio/city-building@2x.jpg') ~ ' 2x'}}" alt="">
                             </a>    
                             <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank" rel="noopener noreferrer"></a>
                         </div>
@@ -394,8 +394,8 @@
                     <div class="item-folio">
                         <div class="item-folio__thumb">
                             <a href="{{asset('images/portfolio/gallery/g-woodcraft.jpg')}}" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                                <img src="{{asset('images/portfolio/woodcraft.jpg')}}" 
-                                     srcset="{{asset('images/portfolio/woodcraft.jpg') ~ ' 1x, ' ~ asset('images/portfolio/woodcraft@2x.jpg') ~ ' 2x'}}" alt="">
+                                <img class="lazyload" data-src="{{asset('images/portfolio/woodcraft.jpg')}}" 
+                                     data-srcset="{{asset('images/portfolio/woodcraft.jpg') ~ ' 1x, ' ~ asset('images/portfolio/woodcraft@2x.jpg') ~ ' 2x'}}" alt="">
                             </a>
                             <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank" rel="noopener noreferrer"></a>
                         </div>
@@ -418,8 +418,8 @@
                             
                         <div class="item-folio__thumb">
                             <a href="{{asset('images/portfolio/gallery/g-beetle.jpg')}}" class="thumb-link" title="The Beetle Car" data-size="1050x700">
-                                <img src="{{asset('images/portfolio/the-beetle.jpg')}}"
-                                     srcset="{{asset('images/portfolio/the-beetle.jpg') ~ ' 1x, ' ~ asset('images/portfolio/the-beetle@2x.jpg') ~ ' 2x'}}" alt="">
+                                <img class="lazyload" data-src="{{asset('images/portfolio/the-beetle.jpg')}}"
+                                     data-srcset="{{asset('images/portfolio/the-beetle.jpg') ~ ' 1x, ' ~ asset('images/portfolio/the-beetle@2x.jpg') ~ ' 2x'}}" alt="">
                             </a>
                             <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank" rel="noopener noreferrer"></a>
                         </div>
@@ -441,8 +441,8 @@
                     <div class="item-folio">
                         <div class="item-folio__thumb">
                             <a href="{{asset('images/portfolio/gallery/g-shutterbug.jpg')}}" class="thumb-link" title="Grow Green" data-size="1050x700">
-                                <img src="{{asset('images/portfolio/shutterbug.jpg')}}" 
-                                     srcset="{{asset('images/portfolio/shutterbug.jpg') ~ ' 1x, ' ~ asset('images/portfolio/shutterbug@2x.jpg') ~  ' 2x'}}" alt="">
+                                <img class="lazyload" data-src="{{asset('images/portfolio/shutterbug.jpg')}}" 
+                                     data-srcset="{{asset('images/portfolio/shutterbug.jpg') ~ ' 1x, ' ~ asset('images/portfolio/shutterbug@2x.jpg') ~  ' 2x'}}" alt="">
                             </a>
                             <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank" rel="noopener noreferrer"></a>
                         </div>
@@ -465,8 +465,8 @@
                             
                         <div class="item-folio__thumb">
                             <a href="{{asset('images/portfolio/gallery/g-lamp.jpg')}}" class="thumb-link" title="Guitarist" data-size="1050x700">
-                                <img src="{{asset('images/portfolio/lamp.jpg')}}" 
-                                     srcset="{{asset('images/portfolio/lamp.jpg') ~ ' 1x, ' ~ asset('images/portfolio/lamp@2x.jpg') ~ ' 2x'}}" alt="">
+                                <img class="lazyload" data-src="{{asset('images/portfolio/lamp.jpg')}}" 
+                                     data-srcset="{{asset('images/portfolio/lamp.jpg') ~ ' 1x, ' ~ asset('images/portfolio/lamp@2x.jpg') ~ ' 2x'}}" alt="">
                             </a>
                             <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank" rel="noopener noreferrer"></a>
                         </div>
@@ -489,8 +489,8 @@
                             
                         <div class="item-folio__thumb">
                             <a href="{{asset('images/portfolio/gallery/g-fuji.jpg')}}" class="thumb-link" title="Palmeira" data-size="1050x700">
-                                <img src="{{asset('images/portfolio/fuji.jpg')}}"
-                                     srcset="{{asset('images/portfolio/fuji.jpg') ~ ' 1x, ' ~ asset('images/portfolio/fuji@2x.jpg') ~ ' 2x'}}" alt="">
+                                <img class="lazyload" data-src="{{asset('images/portfolio/fuji.jpg')}}"
+                                     data-srcset="{{asset('images/portfolio/fuji.jpg') ~ ' 1x, ' ~ asset('images/portfolio/fuji@2x.jpg') ~ ' 2x'}}" alt="">
                             </a>
                             <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank" rel="noopener noreferrer"></a>
                         </div>
@@ -528,7 +528,7 @@
                     Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
                     Laudantium quia consequatur molestias delectus culpa.</p>
                     <div class="testimonials__info">
-                        <img src="{{asset('images/avatars/user-02.jpg')}}" alt="Author image" class="testimonials__avatar">
+                        <img class="lazyload" data-src="{{asset('images/avatars/user-02.jpg')}}" alt="Author image" class="testimonials__avatar">
                         <cite class="testimonials__cite">
                             <strong>Tim Cook</strong>
                             <span>CEO, Apple</span>
@@ -541,7 +541,7 @@
                     Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
                         Quasi voluptas eius distinctio. Atque eos maxime.</p>
                     <div class="testimonials__info">
-                        <img src="{{asset('images/avatars/user-01.jpg')}}" alt="Author image" class="testimonials__avatar">
+                        <img class="lazyload" data-src="{{asset('images/avatars/user-01.jpg')}}" alt="Author image" class="testimonials__avatar">
                         <cite class="testimonials__cite">
                             <strong>Sundar Pichai</strong>
                             <span>CEO, Google</span>
@@ -554,7 +554,7 @@
                     Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
                     Voluptatem dignissimos ut.</p>
                     <div class="testimonials__info">
-                        <img src="{{asset('images/avatars/user-04.jpg')}}" alt="Author image" class="testimonials__avatar">
+                        <img class="lazyload" data-src="{{asset('images/avatars/user-04.jpg')}}" alt="Author image" class="testimonials__avatar">
                         <cite class="testimonials__cite">
                             <strong>Satya Nadella</strong>
                             <span>CEO, Microsoft</span>

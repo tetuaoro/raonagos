@@ -78,3 +78,7 @@ DirectoryIndex index.php
     AddOutputFilterByType DEFLATE application/javascript
     AddOutputFilterByType DEFLATE application/x-javascript
 </IfModule>
+
+<FilesMatch "\.(svg|js|css|webp)$">
+  Header set Cache-Control "max-age=86400, public"
+</FilesMatch>

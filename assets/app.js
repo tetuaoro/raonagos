@@ -8,9 +8,9 @@
 // any CSS you import will output into a single css file (app.css in this case)
 // import './styles/app.css';
 
-import "./styles/base.css";
-import "./styles/vendor.css";
-import "./styles/main.css";
+import "./styles/coverage.css";
+
+require('default-passive-events');
 
 import "./epitome/js/modernizr";
 import "./epitome/js/pace";

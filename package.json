@@ -15,10 +15,12 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress",
+        "build-dev": "encore production --watch",
         "heroku-postbuild": "yarn build"
     },
     "dependencies": {
         "aos": "^2.3.4",
+        "default-passive-events": "^2.0.0",
         "imagesloaded": "4.1.4",
         "jquery-bridget": "^3.0.0",
         "masonry-layout": "^4.2.2",

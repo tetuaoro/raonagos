@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\RouterInterface;
 
 /**
- * @Route("/", name="app_")
+ * @Route("/", name="app_", methods={"GET"})
  */
 class AppController extends AbstractController
 {
@@ -19,7 +19,7 @@ class AppController extends AbstractController
     public function index(): Response
     {
         $response = new Response();
-        $response->setMaxAge(86000);
+        $response->setMaxAge(86400);
 
         return $this->render('app/index.html.twig', [], $response);
     }

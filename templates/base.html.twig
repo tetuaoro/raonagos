@@ -14,9 +14,10 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-32x32.png')}}">
 		<link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-16x16.png')}}">
 		<link rel="manifest" href="{{asset('site.webmanifest')}}">
-		
+
 		{{ encore_entry_link_tags('app') }}
 		{% block stylesheets %}{% endblock %}
+		{% block javascripts %}{% endblock %}
 
 		<script type="application/ld+json">
 			{
@@ -46,7 +47,7 @@
 		</script>
 
 	</head>
-	<body id="top" data-controller="hello">
+	<body id="top">
 
 		<div id="preloader">
 			<div id="loader"></div>
@@ -55,7 +56,6 @@
 		<div data-controller="hello" class="header under-construction">Under Construction</div>
 
 		{% block body %}{% endblock %}
-		{% block javascripts %}{% endblock %}
 
 		{{ encore_entry_script_tags('app') }}
 		{{ render_esi(path('ch_cookie_consent.show_if_cookie_consent_not_set', { 'locale' : app.request.locale })) }}

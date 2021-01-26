@@ -1,0 +1,53 @@
+# HEAD
+meta.description: Rao Nagos - Créateur de site web (développeur web), digital designer et plus. Je m'appelle Tetuaoro Lenoir et suis developpeur fullstack en Polynésie Française.
+
+# HEADER
+about: À propos
+services: Services
+works: Travaux
+
+# INTRO
+h3.title: Hello, I'm Tetuaoro Lenoir
+h1.title: Digital Designer <br> and Web Developer <br> Based In French Polynesia.
+
+# ABOUT
+h2.title.me: À propos de moi
+h2.title.exp: Expériences professionnelles
+p.lead: Je suis <strong>développeur web</strong> de formation. J'aime partager mes idées de création et les mettre en oeuvre. Ce que je préfère par dessus tout, c'est enseigner (plutôt expliquer), transmettre ce que j'apprends avec mon entourage.
+p.desc.1: Conservatoire National des Arts et Metiers (CNAM) - j'ai débuté le <strong>développement web</strong> en 2018 avec une formation intense de 3 mois. Cette formation m'a donné envie d'approfondir et de développer mes connaissances dans l'informatique en général. Développement web, application mobile et desginer 3d.
+p.desc.2: Université de la Polynésie Française (UPF) - j'ai débuté la formation en informatique en 2019 et ai appris les bases du <strong>développement web</strong> en PHP, en javascript et java, python et bash. Ce dernier que j'apprécie particulièrement car les scripts que j'ai créé m'ont beaucoup aidé dans mes travaux.
+p.desc.3: Rao Nagos - en 2020 après la fin de la première crise sanitaire (covid-19), j'ai débuté ma carrière en tant que freelance en <strong>développement web</strong>. Du e-commerce au site vitrine, j'ai réalisé mes propres travaux pour ce portfolio. Vous pouvez les trouverez en bas dans l'onglet <a href="#works" title="works">Travaux</a>.
+timelines1:
+  length: 2
+  0:
+    timeframe: Janvier 2021 - Maintenant
+    title: Serveur minecraft
+    h5: MasterWeb
+    desc: Déploiement d'un serveur minecraft sur la Polynésie qui m'a servi à maîtriser les protocols ftp et à servir un service dns de type SRV et A (et bien sûr pour s'amuser avec mes amis), <a href="#0">Rejoindre les sapa'u sur minecraft</a>.
+  1:
+    timeframe: Septembre 2020 - Décembre 2020
+    title: Développement web
+    h5: Masterweb, développeur
+    desc: Création du site internet <a href="http://www.ariifood.pf" target="_blank" rel="noopener noreferrer">Arii Food</a>, un service pour vendre ces produits alimentaires en lignes dans une abiance e-commerce avec paiement en carte bleue et cryptomonnaie.
+  2:
+    timeframe: Avril 2020 - Juillet 2020
+    title: Développement web et API
+    h5: Masterweb, développeur web et api
+    desc: Création de mon premier site officiel <a href="http://www.chansondufenua.pf" target="_blank" rel="noopener noreferrer">Chanson du Fenua</a>. Comme son nom l'indique, on retrouve les chansons polynésiennes avec leurs notes de guitare. On pourra les avoir en ukulele bientôt.
+timelines2:
+  length: 1
+  0:
+    timeframe: Septembre 2018 - Maintenant
+    title: Université de la Polynésie Française
+    h5: Licence Informatique
+    desc: Ce cursus m'a donné l'envie d'enseigner à mon tour.
+  1:
+    timeframe: Avril 2018 - Juillet 2018
+    title: Conservatoire National des Arts et Metiers
+    h5: Formation Numérique
+    desc: Je garde encore d'exelllent souvenir et relation.
+
+# VAR
+var.scroll-for-more: Scroll For More
+var.hire-me: Engagez-moi
+var.download-cv: Mon CV

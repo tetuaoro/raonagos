@@ -6,7 +6,7 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo" href="{{path('app_index')}}">
+            <a class="site-logo" href="{{path('app_home')}}">
                 RNTL
             </a>
         </div>
@@ -14,17 +14,17 @@
         <nav class="header-nav-wrap">
             <ul class="header-main-nav">
                 <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
-                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-                <li><a class="smoothscroll" href="#services" title="services">Services</a></li>
-                <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
-                <li><a class="smoothscroll" href="#contact" title="contact us">Say Hello</a></li>	
+                <li><a class="smoothscroll" href="#about" title="about">{{"about"|trans}}</a></li>
+                <li><a class="smoothscroll" href="#services" title="services">{{"services"|trans}}</a></li>
+                <li><a class="smoothscroll" href="#works" title="works">{{"works"|trans}}</a></li>
+                <li><a class="smoothscroll" href="#contact" title="contact us">Contact</a></li>	
             </ul>
 
             <ul class="header-social">
-                <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/tetuaoro" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/tetuaoro" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#intro"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+                <li><a href="#intro"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
 
@@ -40,17 +40,15 @@
         <div class="row intro-content">
 
             <div class="column large-9 mob-full intro-text">
-                <h3>Hello, I'm Tetuaoro Lenoir</h3>
+                <h3>{{"h3.title"|trans}}</h3>
                 <h1>
-                    Digital Designer <br>
-                    and Web Developer <br>
-                    Based In French Polynesia.
+                    {{"h1.title"|trans|raw}}
                 </h1>
             </div>
 
             <div class="intro-scroll">
                 <a href="#about" class="intro-scroll-link smoothscroll">
-                    Scroll For More
+                    {{"var.scroll-for-more"|trans}}
                 </a>
             </div>
 
@@ -70,53 +68,28 @@
 
             <div class="row heading-block" data-aos="fade-up">
                 <div class="column large-full">
-                    <h2 class="section-heading">About Me</h2>
+                    <h2 class="section-heading">{{"h2.title.me"|trans}}</h2>
                 </div>
             </div>
 
             <div class="row about-me__content" data-aos="fade-up">
                 <div class="column large-full about-me__text">
-                    <p class="lead">
-                    Nulla aspernatur nam et accusantium. Tempore delectus dignissimos aut
-                    ab commodi. Labore et cupiditate temporibus odio debitis eaque. 
-                    Officia provident aut iste et dicta perferendis. Velit iure adipisci. 
-                    Molestiae qui fuga rerum facilis.
-                    </p>
+                    <p class="lead">{{"p.lead"|trans|raw}}</p>
 
-                    <p>
-                    Reprehenderit quia id facilis nihil odit perferendis fugiat quidem voluptas. 
-                    Non ratione tenetur. Quis earum quia deleniti fugit fugiat minus omnis. 
-                    Iure dolore dolorum. Aspernatur quos cumque ea dolorum nemo nihil 
-                    beatae magnam. Qui molestiae rem. Maxime enim provident ipsum reprehenderit tenetur. Et cupiditate 
-                    repellendus. Et modi ipsum aut harum. Ratione alias.
-                    </p>
+                    <p>{{"p.desc.1"|trans|raw}}</p>
 
-                    <p>
-                    Rerum consequatur dolore quae.
-                    Qui excepturi facilis quam quae quasi. Mollitia occaecati minus voluptas veniam.
-                    Qui excepturi facilis quam quae quasi. Mollitia occaecati minus voluptas veniam. Est est occaecati dolor 
-                    qui aut et eum. Aspernatur quos cumque ea dolorum nemo nihil 
-                    beatae magnam. Qui molestiae rem.
-                    </p>
+                    <p>{{"p.desc.2"|trans|raw}}</p>
 
-                    <p>
-                    Maxime enim provident ipsum reprehenderit tenetur. Et cupiditate 
-                    repellendus. Et modi ipsum aut harum. Ratione alias sed. Rerum 
-                    consequatur dolore quae. Qui excepturi facilis quam quae quasi. 
-                    Mollitia occaecati minus voluptas veniam. Est est occaecati dolor 
-                    qui aut et eum. Aspernatur quos cumque ea dolorum nemo nihil 
-                    beatae magnam. Qui molestiae rem. Aspernatur quos cumque ea dolorum 
-                    nemo nihil. Qui molestiae rem.
-                    </p>
+                    <p>{{"p.desc.3"|trans|raw}}</p>
                 </div>
             </div>
     
             <div class="row about-me__buttons">
                 <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="#0" class="btn btn--stroke full-width">Hire Me</a>
+                    <a href="#0" class="btn btn--stroke full-width">{{"var.hire-me"|trans}}</a>
                 </div>
                 <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="#0" class="btn btn--primary full-width">Download CV</a>
+                    <a href="#0" class="btn btn--primary full-width">{{"var.download-cv"|trans}}</a>
                 </div>
             </div>
 
@@ -126,7 +99,7 @@
 
             <div class="row heading-block" data-aos="fade-up">
                 <div class="column large-full">
-                    <h2 class="section-heading">Work & Education</h2>
+                    <h2 class="section-heading">{{"h2.title.exp"|trans}}</h2>
                 </div>
             </div>
 
@@ -139,41 +112,20 @@
                             <span class="timeline__icon timeline__icon--work"></span>
                         </div>
 
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2018 - Present</p>
-                                <h3 class="item-title">Awesome Studio</h3>
-                                <h5>Lead Designer</h5>
+                        {% for i in range(0,("timelines1"|translength)) %}
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <p class="timeline__timeframe">{{("timelines1." ~ i ~ ".timeframe")|trans}}</p>
+                                    <h3 class="item-title">{{("timelines1." ~ i ~ ".title")|trans}}</h3>
+                                    <h5>{{("timelines1." ~ i ~ ".h5")|trans}}</h5>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>{{("timelines1." ~ i ~ ".desc")|trans|raw}}</p>
+                                </div>
                             </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
+                        {% endfor %}
 
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2017 - June 2018</p>
-                                <h3 class="item-title">Super Cool Agency</h3>
-                                <h5>Frontend Developer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">March 2016 - June 2017</p>
-                                <h3 class="item-title">Epic Design Studio</h3>
-                                <h5>Frontend Developer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
@@ -185,41 +137,19 @@
                             <span class="timeline__icon timeline__icon--education"></span>
                         </div>
 
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2011 - June 2015</p>
-                                <h3 class="item-title">University of Life</h3>
-                                <h5>Master Degree</h5>
+                        {% for i in range(0,("timelines2"|translength)) %}
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <p class="timeline__timeframe">{{("timelines2." ~ i ~ ".timeframe")|trans}}</p>
+                                    <h3 class="item-title">{{("timelines2." ~ i ~ ".title")|trans}}</h3>
+                                    <h5>{{("timelines2." ~ i ~ ".h5")|trans}}</h5>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>{{("timelines2." ~ i ~ ".desc")|trans}}</p>
+                                </div>
                             </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2009 - June 2011</p>
-                                <h3 class="item-title">State Design University</h3>
-                                <h5>Bachelor Degree</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2005 - June 2009</p>
-                                <h3 class="item-title">School of Hard Knocks</h3>
-                                <h5>Bachelor Degree</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
+                        {% endfor %}
 
                     </div>
                 </div>

@@ -1,0 +1,24 @@
+# HEAD
+meta.description: Rao Nagos - Créateur de site web (développeur web), digital designer et plus. Je m'appelle Tetuaoro Lenoir et suis developpeur fullstack en Polynésie Française.
+
+# HEADER
+about: À propos
+services: Services
+works: Travaux
+
+# INTRO
+h3.title: Hello, I'm Tetuaoro Lenoir
+h1.title: Digital Designer <br> and Web Developer <br> Based In French Polynesia.
+
+# ABOUT
+h2.title.me: À propos de moi
+h2.title.exp: Expérience professionnelle
+p.lead: Je suis <strong>développeur web</strong> de formation. J'aime partager mes idées de création et les mettre en oeuvre. Ce que je préfère par dessus tout, c'est enseigner (plutôt expliquer), transmettre ce que j'apprends avec mon entourage.
+p.desc.1: Conservatoire National des Arts et Metiers (CNAM) - j'ai débuté le <strong>développement web</strong> en 2018 avec une formation intense de 3 mois. Cette formation m'a donné envie d'approfondir et de développer mes connaissances dans l'informatique en général. Développement web, application mobile et desginer 3d.
+p.desc.2: Université de la Polynésie Française (UPF) - j'ai débuté la formation en informatique en 2019 et ai appris les bases du <strong>développement web</strong> en PHP, en javascript et java, python et bash. Ce dernier que j'apprécie particulièrement car les scripts que j'ai créé m'ont beaucoup aidé dans mes travaux.
+p.desc.3: Rao Nagos - en 2020 après la fin de la première crise sanitaire (covid-19), j'ai débuté ma carrière en tant que freelance en <strong>développement web</strong>. Du e-commerce au site vitrine, j'ai réalisé mes propres travaux pour ce portfolio. Vous pouvez les trouverez en bas dans l'onglet <a href="#works" title="works">Travaux</a>.
+
+# VAR
+var.scroll-for-more: Scroll For More
+var.hire-me: Engagez-moi
+var.download-cv: Mon CV

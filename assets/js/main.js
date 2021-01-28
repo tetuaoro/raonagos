@@ -53,7 +53,7 @@
 
   /* Menu on Scrolldown
    * ------------------------------------------------------ */
-  /* var ssMenuOnScrolldown = function () {
+  var ssMenuOnScrolldown = function () {
     var hdr = $(".s-header"),
       hdrTop = $(".s-header").offset().top;
 
@@ -64,7 +64,7 @@
         hdr.removeClass("sticky");
       }
     });
-  }; */
+  };
 
   /* Mobile Menu
    * ---------------------------------------------------- */
@@ -262,7 +262,7 @@
    * ------------------------------------------------------ */
   (function clInit() {
     ssPreloader();
-    // ssMenuOnScrolldown();
+    ssMenuOnScrolldown();
     ssMobileMenu();
     ssWaypoints();
     ssMasonryFolio();

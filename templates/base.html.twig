@@ -9,16 +9,19 @@
 			{% block title %}Rao Nagos - Tetuaoro Lenoir | Portfolio
 			{% endblock %}
 		</title>
-		<link rel="preload" as="style" href="{{asset('css/font-awesome/css/fontawesome-all.css')}}">
+
 		<link rel="apple-touch-icon" sizes="180x180" href="{{asset('apple-touch-icon.png')}}">
 		<link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-32x32.png')}}">
 		<link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-16x16.png')}}">
 		<link rel="manifest" href="{{asset('site.webmanifest')}}">
 
-		{{ encore_entry_link_tags('app') }}
 		{% block stylesheets %}{% endblock %}
 		{% block javascripts %}{% endblock %}
-
+		{{ encore_entry_link_tags('app', null, '_default', {media:"print", onload:"this.media='screen'"}) }}
+		<noscript>
+			{{ encore_entry_link_tags('app') }}
+		</noscript>
+		
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",

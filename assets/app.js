@@ -1,6 +1,4 @@
-import "./styles/base.css";
-import "./styles/vendor.css";
-import "./styles/main.css";
+import "./styles/all.css";
 
 import "./js/modernizr";
 import "./js/pace";

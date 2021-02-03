@@ -1,5 +1,5 @@
 ch_cookie_consent: 
     categories: ['session']
     theme: 'light'
-    position: 'bottom'
+    position: 'top'
     simplified: true

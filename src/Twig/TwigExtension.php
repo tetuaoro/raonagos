@@ -3,6 +3,7 @@
 namespace App\Twig;
 
 use Symfony\Contracts\Translation\TranslatorInterface;
+use Symfony\WebpackEncoreBundle\Asset\EntrypointLookupInterface;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
 use Twig\TwigFunction;
@@ -10,10 +11,12 @@ use Twig\TwigFunction;
 class TwigExtension extends AbstractExtension
 {
     private $translator;
+    private $entryFilesTwigExtension;
 
-    public function __construct(TranslatorInterface $translationInterface)
+    public function __construct(TranslatorInterface $translationInterface, EntrypointLookupInterface $entryFilesTwigExtension)
     {
         $this->translator = $translationInterface;
+        $this->entryFilesTwigExtension = $entryFilesTwigExtension;
     }
 
     public function getFilters(): array
@@ -29,7 +32,7 @@ class TwigExtension extends AbstractExtension
     public function getFunctions(): array
     {
         return [
-            new TwigFunction('function_name', [$this, 'doSomethin']),
+            new TwigFunction('encore_render_link', [$this, 'encoreRenderLinkTag', ['is_safe' => ['html']]]),
         ];
     }
 
@@ -41,5 +44,17 @@ class TwigExtension extends AbstractExtension
         $g = $this->translator->trans(($id.'.length'), [], $domain);
 
         return (int) $g;
+    }
+
+    public function encoreRenderLinkTag(string $entryPoint): string
+    {
+        return $this->renderLink($entryPoint);
+    }
+
+    private function renderLink(string $entryPoint): string
+    {
+        dd($this->entryFilesTwigExtension->getCssFiles($entryPoint));
+
+        return '';
     }
 }

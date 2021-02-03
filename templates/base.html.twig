@@ -17,7 +17,9 @@
 
 		{% block stylesheets %}{% endblock %}
 		{% block javascripts %}{% endblock %}
+		{{ encore_entry_link_tags('critical') }}
 		{{ encore_entry_link_tags('app', null, '_default', {media:"print", onload:"this.media='screen'"}) }}
+		{#{{ encore_render_link('app') }}#}
 		<noscript>
 			{{ encore_entry_link_tags('app') }}
 		</noscript>

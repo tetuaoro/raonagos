@@ -33,7 +33,15 @@ class TwigExtension extends AbstractExtension
     {
         return [
             new TwigFunction('encore_render_link', [$this, 'encoreRenderLinkTag', ['is_safe' => ['html']]]),
+            new TwigFunction('get_image_size', [$this, 'getImageSize', ['is_safe' => ['html']]]),
         ];
+    }
+
+    public function getImageSize(string $filename): string
+    {
+        list($width, $height, $type, $attr) = getimagesize('../public'.$filename);
+
+        return $attr;
     }
 
     public function translengthFilter($id, $domain = null): int

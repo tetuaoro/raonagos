@@ -19,7 +19,15 @@
 		{% block javascripts %}{% endblock %}
 		{{ encore_entry_link_tags('critical') }}
 		{{ encore_entry_link_tags('app', null, '_default', {media:"print", onload:"this.media='screen'"}) }}
-		{#{{ encore_render_link('app') }}#}
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-LNG4JZDP8L"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-LNG4JZDP8L');
+		</script>
 		<noscript>
 			{{ encore_entry_link_tags('app') }}
 		</noscript>

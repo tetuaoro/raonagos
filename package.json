@@ -16,9 +16,9 @@
     "scripts": {
         "dev-server": "encore dev-server",
         "dev": "encore dev",
-        "watch": "node penthouse.js && encore dev --watch",
+        "watch": "encore dev --watch",
         "build": "encore production --progress",
-        "build-dev": "node penthouse.js && encore production --watch",
+        "build-dev": "encore production --watch",
         "heroku-postbuild": "yarn build"
     },
     "dependencies": {

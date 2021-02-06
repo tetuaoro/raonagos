@@ -2,4 +2,4 @@ ch_cookie_consent:
     categories: ['session']
     theme: 'light'
     position: 'top'
-    simplified: true
+    simplified: false

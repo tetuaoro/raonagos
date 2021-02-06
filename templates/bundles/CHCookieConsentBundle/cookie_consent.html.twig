@@ -1,0 +1,19 @@
+{% form_theme form '@CHCookieConsent/form/cookie_consent_theme.html.twig' %}
+
+{% include "@CHCookieConsent/cookie_consent_styling.html.twig" %}
+
+{% block script %}
+	{{ encore_entry_script_tags('ch_cookie') }}
+{% endblock %}
+
+<div id="ch-cookie-modal" class="modal" data-aos="fade-up">
+	<div class="modal-content">
+		<div class="ch-cookie-consent ch-cookie-consent--{{ theme }}-theme ch-cookie-consent--{{ position }} {% if simplified %}ch-cookie-consent--simplified{% endif %}">
+			{{ form_start(form, {'attr': {'class': 'ch-cookie-consent__form'}}) }}
+			<div class="ch-cookie-consent__category-group">
+				{{ form_row(form) }}
+			</div>
+			{{ form_end(form) }}
+		</div>
+	</div>
+</div>

@@ -243,7 +243,7 @@
     ssMenuOnScrolldown();
     ssMobileMenu();
     ssWaypoints();
-    $(".lazyload").on("lazyloaded", function () {
+    $("img.lazyload").on("lazyloaded", function () {
       ssMasonryFolio();
     });
     ssPhotoswipe();
@@ -251,7 +251,5 @@
     ssSmoothScroll();
     ssAlertBoxes();
     ssAOS();
-
-
   })();
 })(jQuery);

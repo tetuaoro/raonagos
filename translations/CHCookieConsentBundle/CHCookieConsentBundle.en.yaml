@@ -1,2 +1,16 @@
-ch_cookie_consent.session.title: Cookies
-ch_cookie_consent.session.description: This site uses cookies to improve your browsing experience. For more information see our privacy policy.
+ch_cookie_consent:
+  title: Cookies
+  intro: How we use cookies ?
+  read_more: Read more about
+  session:
+    title: Rules of cookies
+    description: This site uses cookies to improve your browsing experience. For more information see our privacy policy.
+  yes: Yes
+  no: No
+  use_only_functional_cookies: Use only
+  use_all_cookies: Use all
+  show_details: Show
+  hide_details: Hide
+  save: Save
+Cookie consent: Cookie consent
+

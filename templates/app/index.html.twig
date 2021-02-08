@@ -14,9 +14,9 @@
         <nav class="header-nav-wrap">
             <ul class="header-main-nav">
                 <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
-                <li><a class="smoothscroll" href="#about" title="about">{{"about"|trans}}</a></li>
-                <li><a class="smoothscroll" href="#services" title="services">{{"services"|trans}}</a></li>
-                <li><a class="smoothscroll" href="#works" title="works">{{"works"|trans}}</a></li>
+                <li><a class="smoothscroll" href="#about" title="about">{{"header.about"|trans}}</a></li>
+                <li><a class="smoothscroll" href="#services" title="services">{{"header.services"|trans}}</a></li>
+                <li><a class="smoothscroll" href="#works" title="works">{{"header.works"|trans}}</a></li>
                 <li><a class="smoothscroll" href="#contact" title="contact us">Contact</a></li>	
             </ul>
 
@@ -40,9 +40,9 @@
         <div class="row intro-content">
 
             <div class="column large-9 mob-full intro-text">
-                <h3>{{"h3.title"|trans}}</h3>
+                <h3>{{"intro.h3.title"|trans}}</h3>
                 <h1>
-                    {{"h1.title"|trans|raw}}
+                    {{"intro.h1.title"|trans|raw}}
                 </h1>
             </div>
 
@@ -68,19 +68,19 @@
 
             <div class="row heading-block" data-aos="fade-up">
                 <div class="column large-full">
-                    <h2 class="section-heading">{{"h2.title.me"|trans}}</h2>
+                    <h2 class="section-heading">{{"about.h2.title.me"|trans}}</h2>
                 </div>
             </div>
 
             <div class="row about-me__content" data-aos="fade-up">
                 <div class="column large-full about-me__text">
-                    <p class="lead">{{"p.lead"|trans|raw}}</p>
+                    <p class="lead">{{"about.p.lead"|trans|raw}}</p>
 
-                    <p>{{"p.desc.1"|trans|raw}}</p>
+                    <p>{{"about.p.desc.1"|trans|raw}}</p>
 
-                    <p>{{"p.desc.2"|trans|raw}}</p>
+                    <p>{{"about.p.desc.2"|trans|raw}}</p>
 
-                    <p>{{"p.desc.3"|trans|raw}}</p>
+                    <p>{{"about.p.desc.3"|trans|raw}}</p>
                 </div>
             </div>
     
@@ -99,7 +99,7 @@
 
             <div class="row heading-block" data-aos="fade-up">
                 <div class="column large-full">
-                    <h2 class="section-heading">{{"h2.title.exp"|trans}}</h2>
+                    <h2 class="section-heading">{{"about.h2.title.exp"|trans}}</h2>
                 </div>
             </div>
 
@@ -112,16 +112,16 @@
                             <span class="timeline__icon timeline__icon--work"></span>
                         </div>
 
-                        {% for i in range(0,("timelines1"|translength)) %}
+                        {% for i in range(0,("about.timelines1"|translength)) %}
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <p class="timeline__timeframe">{{("timelines1." ~ i ~ ".timeframe")|trans}}</p>
-                                    <h3 class="item-title">{{("timelines1." ~ i ~ ".title")|trans}}</h3>
-                                    <h5>{{("timelines1." ~ i ~ ".h5")|trans}}</h5>
+                                    <p class="timeline__timeframe">{{("about.timelines1." ~ i ~ ".timeframe")|trans}}</p>
+                                    <h3 class="item-title">{{("about.timelines1." ~ i ~ ".title")|trans}}</h3>
+                                    <h5>{{("about.timelines1." ~ i ~ ".h5")|trans}}</h5>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>{{("timelines1." ~ i ~ ".desc")|trans|raw}}</p>
+                                    <p>{{("about.timelines1." ~ i ~ ".desc")|trans|raw}}</p>
                                 </div>
                             </div>
                         {% endfor %}
@@ -137,16 +137,16 @@
                             <span class="timeline__icon timeline__icon--education"></span>
                         </div>
 
-                        {% for i in range(0,("timelines2"|translength)) %}
+                        {% for i in range(0,("about.timelines2"|translength)) %}
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <p class="timeline__timeframe">{{("timelines2." ~ i ~ ".timeframe")|trans}}</p>
-                                    <h3 class="item-title">{{("timelines2." ~ i ~ ".title")|trans}}</h3>
-                                    <h5>{{("timelines2." ~ i ~ ".h5")|trans}}</h5>
+                                    <p class="timeline__timeframe">{{("about.timelines2." ~ i ~ ".timeframe")|trans}}</p>
+                                    <h3 class="item-title">{{("about.timelines2." ~ i ~ ".title")|trans}}</h3>
+                                    <h5>{{("about.timelines2." ~ i ~ ".h5")|trans}}</h5>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>{{("timelines2." ~ i ~ ".desc")|trans}}</p>
+                                    <p>{{("about.timelines2." ~ i ~ ".desc")|trans}}</p>
                                 </div>
                             </div>
                         {% endfor %}
@@ -168,81 +168,24 @@
 
         <div class="row heading-block heading-block--center" data-aos="fade-up">
             <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">Capabilities</h2>
+                <h2 class="section-heading section-heading--centerbottom">{{"services.h2.title"|trans}}</h2>
 
                 <p class="section-desc">
-                    My passion and goal is to help you make your business standout.
+                    {{"services.p.desc"|trans}}
                 </p>
             </div>
         </div> <!-- end heading-block -->
 
         <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
 
+            {% for i in range(0,("services.lists"|translength)) %}
             <div class="column item-service" data-aos="fade-up">
                 <div class="item-service__content">
-                    <h4 class="item-title">Brand Identity</h4>
-                    <p>
-                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                    </p>
+                    <h4 class="item-title">{{("services.lists." ~ i ~ ".h4")|trans}}</h4>
+                    <p>{{("services.lists." ~ i ~ ".p")|trans}}</p>
                 </div>
             </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Illustration</h4>
-                    <p>
-                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Web Design</h4>
-                    <p>
-                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Product Strategy</h4>
-                    <p>
-                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">UI/UX Design</h4>
-                    <p>
-                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Mobile Design</h4>
-                    <p>
-                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                    </p>
-                </div>
-            </div>
+            {% endfor %}
 
         </div> <!-- end services-list -->
 
@@ -256,20 +199,16 @@
         <div class="row heading-block heading-block--center" data-aos="fade-up">
             <div class="column large-full">
                 <h2 class="section-desc">
-                    Need a great reliable web hosting?
+                    {{"cta.h2.title"|trans}}
                 </h2>
             </div>
         </div> <!-- end heading-block -->
 
         <div class="row cta-content" data-aos="fade-up">
             <div class="column large-full">
-                <p>
-                We highly recommend <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.
-                Powerful web and Wordpress hosting. Guaranteed.
-                Starting at $2.95 per month.
-                </p>
+                <p>{{"cta.p.desc"|trans|raw}}</p>
 
-                <a href="https://www.dreamhost.com/r.cgi?287326" class="btn full-width">Get Started</a>
+                <a href="https://www.heroku.com/" class="btn full-width">{{"var.cta-button"|trans}}</a>
             </div>
         </div> <!-- end ad-content -->
 
@@ -282,10 +221,9 @@
 
         <div class="row heading-block heading-block--center" data-aos="fade-up">
             <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">Selected Works</h2>
+                <h2 class="section-heading section-heading--centerbottom">{{"works.h2.title"|trans}}</h2>
                 <p class="section-desc">
-                    Here are some of my selected works I have done lately. Feel free to 
-                    check them out.
+                    {{"works.p.desc"|trans}}
                 </p>
             </div>
         </div> <!-- end heading-block -->
@@ -302,20 +240,20 @@
                                 <img class="lazyload" {{get_image_size(asset('images/portfolio/city-building.jpg'))}}  data-src="{{asset('images/portfolio/city-building.jpg')}}" 
                                      data-srcset="{{asset('images/portfolio/city-building.jpg') ~ ' 1x, ' ~ asset('images/portfolio/city-building@2x.jpg') ~ ' 2x'}}" alt="city building">
                             </a>    
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank" rel="noopener noreferrer"></a>
+                            <a href="http://www.ariifood.pf/" class="item-folio__project-link" title="Arii Food" target="_blank" rel="noopener noreferrer"></a>
                         </div>
     
                         <div class="item-folio__text">
                             <h4 class="item-folio__title">
-                                City Building
+                                Arii Food
                             </h4>
                             <p class="item-folio__cat">
-                                Branding
+                                E-commerce
                             </p>
                         </div>
     
                         <div class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                            <p>{{"works.arii-food.caption"|trans}}</p>
                         </div>
                     </div>
                 </div> <!-- end masonry__brick -->
@@ -327,18 +265,18 @@
                                 <img class="lazyload" {{get_image_size(asset('images/portfolio/woodcraft.jpg'))}} data-src="{{asset('images/portfolio/woodcraft.jpg')}}" 
                                      data-srcset="{{asset('images/portfolio/woodcraft.jpg') ~ ' 1x, ' ~ asset('images/portfolio/woodcraft@2x.jpg') ~ ' 2x'}}" alt="woodcraft">
                             </a>
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank" rel="noopener noreferrer"></a>
+                            <a href="https://www.chansondufenua.pf/" class="item-folio__project-link" title="Chanson du fenua" target="_blank" rel="noopener noreferrer"></a>
                         </div>
                         <div class="item-folio__text">
                             <h4 class="item-folio__title">
-                                Woodcraft
+                                Chanson du Fenua
                             </h4>
                             <p class="item-folio__cat">
-                                Web Design
+                                Api
                             </p>
                         </div>
                         <div class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                            <p>{{"works.chanson-du-fenua.caption"|trans}}</p>
                         </div>
                     </div>
                 </div> <!-- end masonry__brick -->
@@ -355,85 +293,14 @@
                         </div>
                         <div class="item-folio__text">
                             <h4 class="item-folio__title">
-                                The Beetle
+                                Tarahura'a pereo'o
                             </h4>
                             <p class="item-folio__cat">
-                                Web Development
+                                Développement web/api
                             </p>
                         </div>
                         <div class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="{{asset('images/portfolio/gallery/g-shutterbug.jpg')}}" class="thumb-link" title="Grow Green" data-size="1050x700">
-                                <img class="lazyload" {{get_image_size(asset('images/portfolio/shutterbug.jpg'))}} data-src="{{asset('images/portfolio/shutterbug.jpg')}}" 
-                                     data-srcset="{{asset('images/portfolio/shutterbug.jpg') ~ ' 1x, ' ~ asset('images/portfolio/shutterbug@2x.jpg') ~  ' 2x'}}" alt="shutterbug">
-                            </a>
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank" rel="noopener noreferrer"></a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Shutterbug
-                            </h4>
-                            <p class="item-folio__cat">
-                                Branding
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="{{asset('images/portfolio/gallery/g-lamp.jpg')}}" class="thumb-link" title="Guitarist" data-size="1050x700">
-                                <img class="lazyload" {{get_image_size(asset('images/portfolio/lamp.jpg'))}} data-src="{{asset('images/portfolio/lamp.jpg')}}" 
-                                     data-srcset="{{asset('images/portfolio/lamp.jpg') ~ ' 1x, ' ~ asset('images/portfolio/lamp@2x.jpg') ~ ' 2x'}}" alt="a lamp">
-                            </a>
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank" rel="noopener noreferrer"></a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Lamp
-                            </h4>
-                            <p class="item-folio__cat">
-                                Web Design
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-        
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="{{asset('images/portfolio/gallery/g-fuji.jpg')}}" class="thumb-link" title="Palmeira" data-size="1050x700">
-                                <img class="lazyload" {{get_image_size(asset('images/portfolio/fuji.jpg'))}} data-src="{{asset('images/portfolio/fuji.jpg')}}"
-                                     data-srcset="{{asset('images/portfolio/fuji.jpg') ~ ' 1x, ' ~ asset('images/portfolio/fuji@2x.jpg') ~ ' 2x'}}" alt="mont fuji">
-                            </a>
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank" rel="noopener noreferrer"></a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Fuji
-                            </h4>
-                            <p class="item-folio__cat">
-                                Web Design
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                            <p>{{"works.location.caption"|trans}}</p>
                         </div>
                     </div>
                 </div> <!-- end masonry__brick -->
@@ -445,80 +312,25 @@
     </section> <!-- end s-work -->
 
 
-    <!-- testimonies
-    ================================================== -->
-    <section class="s-testimonials">
-    
-        <div class="row testimonials" data-aos="fade-up">
-
-            <div class="column large-full testimonials__slider">
-
-                <div class="testimonials__slide">
-                    <p>Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
-                    Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
-                    Laudantium quia consequatur molestias delectus culpa.</p>
-                    <div class="testimonials__info">
-                        <img class="lazyload" data-src="{{asset('images/avatars/user-02.jpg')}}" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Tim Cook</strong>
-                            <span>CEO, Apple</span>
-                        </cite>
-                    </div>
-                </div> <!-- end testimonials__slide -->
-
-                <div class="testimonials__slide">
-                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
-                        Quasi voluptas eius distinctio. Atque eos maxime.</p>
-                    <div class="testimonials__info">
-                        <img class="lazyload" data-src="{{asset('images/avatars/user-01.jpg')}}" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Sundar Pichai</strong>
-                            <span>CEO, Google</span>
-                        </cite>
-                    </div>
-                </div> <!-- end testimonials__slide -->
-
-                <div class="testimonials__slide">
-                    <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
-                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
-                    Voluptatem dignissimos ut.</p>
-                    <div class="testimonials__info">
-                        <img class="lazyload" data-src="{{asset('images/avatars/user-04.jpg')}}" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Satya Nadella</strong>
-                            <span>CEO, Microsoft</span>
-                        </cite>
-                    </div>
-                </div> <!-- end testimonials__slide -->
-                
-            </div> <!-- end testimonials__slider -->
-
-        </div> <!-- end testimonials -->
-
-    </section> <!-- end s-testimonials -->
-
-
     <!-- contact
     ================================================== -->
     <section id="contact" class="s-contact ss-dark target-section">
 
         <div class="row heading-block" data-aos="fade-up">
             <div class="column large-full">
-                <h2 class="section-heading">Get In Touch</h2>
+                <h2 class="section-heading">{{"contact.h2.title"|trans}}</h2>
             </div>
         </div>
 
         <div class="row contact-main" data-aos="fade-up">
             <div class="column large-full">
                 <p class="contact-email">
-                    <a href="mailto:#0">hello@epitome.com</a>
+                    <a href="mailto:contact@rao-nagos.pf">contact@rao-nagos.pf</a>
                 </p>
 
                 <p class="section-desc">
-                I'm happy to connect, listen and help. Let's work together and build
-                something awesome. Let's turn your idea to an even greater product.
-                <a href="mailto:#0">Email Me</a>.
+                {{"contact.p.desc"|trans}}
+                <a href="mailto:contact@rao-nagos.pf">{{"var.email-me"|trans}}</a>.
                 </p>
             </div>
         </div>
@@ -526,16 +338,15 @@
         <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
 
             <div class="column large-5 medium-full contact-phone">
-                <h4>Call Me</h4>
-                <a href="tel:197-543-2345">+197 543 2345</a>
+                <h4>{{"contact.phone.h3"|trans}}</h4>
+                <a href="tel:689-87-323795">+689 87 323795</a>
             </div>
 
             <div class="column large-7 medium-full contact-social">
                 <h4>Social</h4>
                 <ul>
-                    <li><a href="#0" title="Facebook">Facebook</a></li>
-                    <li><a href="#0" title="Twitter">Twitter</a></li>
-                    <li><a href="#0" title="Instagram">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/tetuaoro" title="Facebook">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/tetuaoro" title="Twitter">Twitter</a></li>
                 </ul>
             </div>
 
@@ -549,8 +360,8 @@
     <footer>
         <div class="row">
             <div class="column large-full ss-copyright">
-                <span>© Copyright Epitome 2019</span> 
-                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                <span>© Copyright Rao Nagos 2021</span> 
+                <span>Designer par <a href="http://www.rao-nagos.pf/">Rao Nagos</a></span>
             </div>            
 
             <div class="ss-go-top">

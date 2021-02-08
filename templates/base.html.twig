@@ -37,8 +37,23 @@
 				"@context": "https://schema.org",
 				"@type": "Corporation",
 				"legalName":"Rao Nagos",
-				"url": "http://www.rao-nagos.pf",
+				"name":"Rao Nagos",
 				"logo": "http://www.rao-nagos.pf/android-chrome-512x512.png",
+				"url": "http://www.rao-nagos.pf",
+				"sameAs": [
+					"https://pf.linkedin.com/in/tetuaoro-lenoir-20a006194",
+					"https://www.facebook.com/tetuaoro/",
+					"https://twitter.com/tetuaoro"
+				],
+				"contactPoint" : [
+				{
+					"@type" : "ContactPoint",
+					"telephone" : "+689-87-323795",
+					"contactType" : "customer service",
+					"areaServed" : "PF",
+					"availableLanguage" : ["French"]
+				}
+				],
 				"founder": {
 					"@type": "Person",
 					"familyName": "Lenoir",
@@ -61,12 +76,6 @@
 
 	</head>
 	<body id="top">
-
-		<div id="preloader" style="display: none;">
-			<div id="loader"></div>
-		</div>
-
-		<div data-controller="hello" class="header under-construction">Under Construction</div>
 
 		{% block body %}{% endblock %}
 

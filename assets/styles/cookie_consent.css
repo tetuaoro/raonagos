@@ -16,7 +16,7 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .ch-cookie-consent {
@@ -61,8 +61,7 @@
 }
 
 .ch-cookie-consent__category-toggle {
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-align: start;
   align-items: flex-start;
 }

@@ -1,13 +1,10 @@
 {
     "devDependencies": {
-        "@symfony/stimulus-bridge": "^1.1.0",
         "@symfony/webpack-encore": "^0.32.0",
         "add": "^2.0.6",
         "core-js": "^3.0.0",
-        "fs": "^0.0.1-security",
         "jquery": "3.2.1",
         "regenerator-runtime": "^0.13.2",
-        "stimulus": "^2.0.0",
         "webpack-notifier": "^1.6.0",
         "yarn": "^1.22.10"
     },

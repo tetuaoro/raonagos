@@ -1,0 +1,11 @@
+---
+application:
+  name: "raonagos"
+  project: "test-project-001"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-raonagos"
+  routes:
+  - application_name: "raonagos"
+    paths:
+    - "/*"

@@ -1,6 +1,6 @@
 {
-  "name": "template-nextjs",
-  "version": "0.1.1",
+  "name": "raonagos",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev",

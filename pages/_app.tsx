@@ -7,7 +7,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <div className="flex flex-col md:flex-row">
         <Header />
-        <Component {...pageProps} />
+        <main>
+          <Component {...pageProps} />
+        </main>
       </div>
     </>
   )

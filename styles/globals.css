@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* NAVIGATION */
+
+  header {
+    @apply md:sticky md:top-0 flex pt-4 pb-1 px-4 md:flex-col w-screen md:w-max md:h-screen bg-gray-800;
+  }
+
+  .nav-brand {
+    @apply md:flex md:justify-center;
+  }
+
+  .nav-toggler {
+    @apply pt-2 flex justify-end md:hidden;
+  }
+
+  .nav-menu {
+    @apply h-0 md:h-max;
+    @apply mt-4 sm:mt-8 md:mt-12;
+    @apply flex flex-col items-end md:items-start;
+    transition: height 400ms ease-in;
+  }
+
+  .nav-menu.show {
+    @apply h-60;
+    transition: height 500ms ease-out;
+  }
+
+  .nav-item {
+    @apply p-3 md:p-4 lg:p-6;
+    @apply flex items-center gap-2;
+    @apply text-base hover:text-primary-100 md:hover:scale-110;
+    @apply md:transition-all md:duration-300 md:ease-in-out;
+  }
+
+  .nav-item span {
+    @apply order-2 md:order-1;
+  }
+  .nav-item :not(span) {
+    @apply order-1 md:order-2;
+  }
+
+  .nav-social {
+    @apply hidden md:flex justify-around mt-auto mb-4 pt-4 border-t-2 border-t-gray-700;
+  }
+
+  .nav-social a {
+    @apply hover:text-primary-100 transition-all duration-300 ease-in-out;
+  }
+
+  /* CONTENT */
+
+  main {
+    @apply w-full p-2 md:p-8 lg:p-12 bg-gray-700 text-white;
+  }
+}

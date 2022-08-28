@@ -20,6 +20,7 @@
       "@libs/*": ["libs/*"],
       "@styles/*": ["../styles/*"],
       "@images/*": ["../public/images/*"],
+      "@icons/*": ["../public/icons/*"],
       "@root/*": ["../*"]
     }
   },

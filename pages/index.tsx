@@ -4,7 +4,7 @@ import { siteurl, sitename, fbAppId } from "@libs/app"
 
 import type { NextPage } from "next"
 
-const title = "Rao Nagos - Créateur de site web, bot de trading et serveur mail"
+const title = "Rao Nagos - Créateur de site web, de bot de trading et de serveur de messagerie"
 const description = ""
 
 const Page: NextPage = () => {
@@ -25,12 +25,12 @@ const Page: NextPage = () => {
         <meta property="og:image:type" content="image/png" />
         <script type="application/ld+json">{JSON.stringify({})}</script>
       </Head>
-      <main id="home" className="w-full p-2 sm:p-8 md:p-12 bg-gray-700 text-white">
+      <section id="home">
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
-        {new Array(50).fill(0).map((_, k)=>(
+        {new Array(50).fill(0).map((_, k) => (
           <p key={k}>test</p>
         ))}
-      </main>
+      </section>
       <Footer />
     </>
   )

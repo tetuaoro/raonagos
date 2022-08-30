@@ -4,7 +4,7 @@ import { siteurl, sitename, fbAppId } from "@libs/app"
 
 import type { NextPage } from "next"
 
-const title = "Rao Nagos - Créateur de site web, de bot de trading et de serveur de messagerie"
+const title = `${sitename} - Créateur de site web, de bot de trading et de serveur de messagerie`
 const description = ""
 
 const Page: NextPage = () => {

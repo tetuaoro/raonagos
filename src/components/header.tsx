@@ -4,6 +4,7 @@ import Image from "next/image"
 import logo from "@icons/logo.png"
 
 import type { MouseEventHandler } from "react"
+import { sitename } from "@libs/app"
 
 export const ROUTES = [
   {
@@ -54,47 +55,35 @@ export default function Header() {
   const toggleMenu: MouseEventHandler = (e) => ((e.target as HTMLElement).nodeName === "A" ? setMenuToggle(false) : setMenuToggle(!menuToggle))
 
   return (
-    <header className="whitespace-nowrap text-white">
-      <div className="nav-brand">
-        <Image priority src={logo} width={60} height={60} />
+    <header className="poppins">
+      <div className="hero">
+        <Image src="/images/hero_bg.webp" layout="fill" objectFit="cover" objectPosition="26%" priority />
       </div>
-      <nav className="w-full">
-        <div className="nav-toggler">
-          <div onClick={toggleMenu}>
+      <div className="navbar">
+        <div className="brand">{sitename}</div>
+        <nav>
+          <div className="toggle" onClick={toggleMenu}>
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" className="bi bi-three-dots-vertical" viewBox="0 0 16 16">
               <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
             </svg>
           </div>
-        </div>
-        <ul className={`nav-menu${menuToggle ? " show" : ""}`}>
-          {ROUTES.map(({ id, routeName, icon }, k) => (
-            <li key={k} className="nav-item">
-              <span>{icon}</span>
-              <a onClick={toggleMenu} href={`#${id}`}>
-                {routeName}
-              </a>
+          <ul className={`menu${menuToggle ? " show" : ""}`}>
+            <li className="menu-item">
+              <a href="#"  onClick={toggleMenu}>Hero 1</a>
             </li>
-          ))}
-        </ul>
-      </nav>
-      <div className="nav-social">
-        <a href="mailto:contact@rao-nagos.pf">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
-            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-          </svg>
-        </a>
-        <a href="https://www.facebook.com/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-facebook" viewBox="0 0 16 16">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-          </svg>
-        </a>
-        <a href="https://www.twitter.com/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-twitter" viewBox="0 0 16 16">
-            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-          </svg>
-        </a>
+            <li className="menu-item">
+              <a href="#"  onClick={toggleMenu}>Hero 2</a>
+            </li>
+            <li className="menu-item">
+              <a href="#"  onClick={toggleMenu}>Hero 3</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <p className="hidden md:block text-xs mb-1">© 2022 - Rao Nagos</p>
+      <section className="absolute top-0 w-screen h-screen flex flex-col justify-center text-white items-center text-center">
+        <p className="poppins-700 text-7xl">AGENCE DIGITALE</p>
+        <p className="text-lg mt-8 md:mt-12">Ton créateur de site web, de bot de trading et de serveur de messagerie !</p>
+      </section>
     </header>
   )
 }

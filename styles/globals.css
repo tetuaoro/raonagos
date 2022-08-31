@@ -7,7 +7,7 @@
 
   body,
   .__next {
-    @apply m-0 p-0;
+    @apply m-0 p-0 text-lg;
     font-family: "Open Sans", sans-serif;
   }
 
@@ -21,7 +21,7 @@
     font-weight: 700 !important;
   }
 
-  /*  */
+  /* NAVIGATION */
 
   .hero {
     @apply h-screen z-0;
@@ -46,20 +46,67 @@
   }
 
   .menu {
-    @apply flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-20;
-    @apply text-lg;
+    @apply flex flex-col md:flex-row;
     @apply h-0 md:h-min overflow-hidden transition-all duration-300 ease-in-out;
   }
 
   .menu-item {
     @apply rounded-lg md:hover:bg-primary-100 md:hover:scale-110 transition-all duration-300 ease-linear;
-    @apply m-1 p-1;
+    @apply my-2 md:my-0 mx-2 md:mx-3 px-2;
   }
 
   .menu.show {
     @apply bg-opacity-70 bg-primary-100 md:bg-transparent rounded-lg md:rounded-none;
-    @apply h-48 md:h-min;
+    @apply h-36 md:h-min;
   }
 
-  /* NAVIGATION */
+  /* COMPONENTS */
+
+  main {
+    @apply my-12 mx-1 sm:mx-4 md:mx-8 lg:mx-12;
+  }
+
+  section {
+    @apply mb-2 sm:mb-4 md:mb-8 lg:mb-12;
+  }
+
+  h2 {
+    @apply font-bold uppercase text-2xl md:text-4xl mb-4 sm:mb-8 md:mb-12;
+    @apply before:content-['\_\_\_\_\_'] before:text-sm sm:before:text-lg before:text-primary-100 before:-tracking-[.2em];
+    @apply after:content-['\_\_\_\_\_'] after:text-sm sm:after:text-lg after:text-primary-100 after:-tracking-[.2em];
+  }
+
+  i {
+    @apply text-primary-100;
+  }
+
+  .presentation {
+    @apply flex flex-col items-center mb-8 md:mb-12;
+  }
+
+  .service-items {
+    @apply flex flex-col gap-x-12 gap-y-8 items-center sm:flex-row sm:justify-center;
+  }
+
+  .service-item {
+    @apply flex flex-col items-center;
+  }
+
+  .service-item > div {
+    @apply p-8 text-white bg-gray-800 rounded-full;
+    @apply transition-colors duration-300 ease-in;
+  }
+
+  .service-item > p {
+    @apply mt-4 poppins poppins-700;
+    @apply transition-transform duration-200 ease-in;
+  }
+
+  .service-item:hover > div {
+    @apply bg-primary-100;
+  }
+
+  .service-item:hover > p {
+    @apply scale-110;
+  }
 }

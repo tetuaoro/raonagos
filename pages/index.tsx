@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Footer from "@components/footer"
 import { siteurl, sitename, fbAppId } from "@libs/app"
+import Services from "@components/services"
 
 import type { NextPage } from "next"
 
@@ -25,13 +26,7 @@ const Page: NextPage = () => {
         <meta property="og:image:type" content="image/png" />
         <script type="application/ld+json">{JSON.stringify({})}</script>
       </Head>
-      <section id="home">
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
-        {new Array(50).fill(0).map((_, k) => (
-          <p key={k}>test</p>
-        ))}
-      </section>
-      <Footer />
+      <Services />
     </>
   )
 }

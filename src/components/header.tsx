@@ -69,20 +69,26 @@ export default function Header() {
           </div>
           <ul className={`menu${menuToggle ? " show" : ""}`}>
             <li className="menu-item">
-              <a href="#"  onClick={toggleMenu}>Hero 1</a>
+              <a href="#whoareyou" onClick={toggleMenu}>
+                Qui sommes-nous ?
+              </a>
             </li>
             <li className="menu-item">
-              <a href="#"  onClick={toggleMenu}>Hero 2</a>
+              <a href="#" onClick={toggleMenu}>
+                Hero 2
+              </a>
             </li>
             <li className="menu-item">
-              <a href="#"  onClick={toggleMenu}>Hero 3</a>
+              <a href="#" onClick={toggleMenu}>
+                Hero 3
+              </a>
             </li>
           </ul>
         </nav>
       </div>
-      <section className="absolute top-0 w-screen h-screen flex flex-col justify-center text-white items-center text-center">
-        <p className="poppins-700 text-7xl">AGENCE DIGITALE</p>
-        <p className="text-lg mt-8 md:mt-12">Ton créateur de site web, de bot de trading et de serveur de messagerie !</p>
+      <section className="absolute top-0 w-full h-full flex flex-col justify-center text-white items-center text-center">
+        <h1 className="poppins-700 text-7xl">AGENCE DIGITALE</h1>
+        <p className="mt-8 md:mt-12">Ton créateur de site web, de bot de trading et de serveur de messagerie !</p>
       </section>
     </header>
   )

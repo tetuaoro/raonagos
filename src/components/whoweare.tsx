@@ -2,10 +2,10 @@ import { sitename } from "@libs/app"
 
 export default function Component() {
   return (
-    <section id="whoareyou">
+    <section id="whoweare">
       <div className="presentation">
-        <h2 className="poppins poppins-700">Qui êtes-vous ?</h2>
-        <p className="text-center">
+        <h2>Qui sommes-nous ?</h2>
+        <p className="md:text-center">
           {`${sitename} est une agence numérique qui créée pour vous des sites web `}
           <strong>
             <i>personnalisés</i>

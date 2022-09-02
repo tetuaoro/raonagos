@@ -30,7 +30,7 @@
   .navbar {
     @apply absolute top-0 z-10;
     @apply w-full p-2 sm:p-4 md:p-8 lg:p-12;
-    @apply flex md:items-center justify-between text-white;
+    @apply flex lg:items-center justify-between text-white;
   }
 
   .brand {
@@ -38,26 +38,26 @@
   }
 
   .navbar nav {
-    @apply flex flex-col md:flex-row;
+    @apply flex flex-col lg:flex-row;
   }
 
   .toggle {
-    @apply md:hidden mb-4 ml-auto md:mb-0 cursor-pointer;
+    @apply lg:hidden mb-4 ml-auto md:mb-0 cursor-pointer;
   }
 
   .menu {
-    @apply flex flex-col md:flex-row;
-    @apply h-0 md:h-min overflow-hidden transition-all duration-300 ease-in-out;
+    @apply flex flex-col lg:flex-row;
+    @apply h-0 lg:h-min overflow-hidden transition-all duration-300 ease-in-out;
   }
 
   .menu-item {
-    @apply rounded-lg md:hover:bg-primary-100 md:hover:scale-110 transition-all duration-300 ease-linear;
-    @apply my-2 md:my-0 mx-2 md:mx-3 px-2;
+    @apply rounded-lg lg:hover:bg-primary-100 lg:hover:scale-110 transition-all duration-300 ease-linear;
+    @apply my-2 lg:my-0 mx-2 md:mx-3 px-2;
   }
 
   .menu.show {
-    @apply bg-opacity-70 bg-primary-100 md:bg-transparent rounded-lg md:rounded-none;
-    @apply h-36 md:h-min;
+    @apply bg-opacity-70 bg-primary-100 lg:bg-transparent rounded-lg lg:rounded-none;
+    @apply h-36 lg:h-min;
   }
 
   /* COMPONENTS */
@@ -114,8 +114,20 @@
 
   /* Works */
 
+  .work-items {
+    @apply flex flex-col items-center max-w-[501px] lg:max-w-none mx-auto lg:flex-row;
+  }
+
   .overlay-image {
-    @apply after:transition-all after:duration-300 after:ease-in-out hover:after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:opacity-70;
+    @apply relative leading-[0];
+  }
+
+  .overlay-image > span {
+    @apply after:transition-all after:duration-300 after:ease-in-out;
+  }
+
+  .overlay-image:hover > span {
+    @apply after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-70;
   }
 
   .overlay-image:hover img {
@@ -123,6 +135,7 @@
   }
 
   .overlay-image div {
+    @apply leading-normal;
     @apply w-full h-full flex flex-col justify-center opacity-0 items-center absolute top-0 z-10 text-white;
   }
 

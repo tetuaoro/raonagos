@@ -8,8 +8,9 @@ import { sitename } from "@libs/app"
 export default function Component() {
   return (
     <section id="whatwedo">
-      <div className="flex justify-center lg:block">
+      <div className="flex flex-col items-center lg:block mb-4">
         <h2>Nos oeuvres</h2>
+        <p>{`Si tu cherches à renforcer ta présence sur la toile ou à maximiser ton temps sur les marchés mondiaux ou bien à envoyer des mails avec ton domaine en .pf de manière sécurisée, ${sitename} est ton agence avec ses 3 services :`}</p>
       </div>
       <div className="work-items">
         <div className="flex flex-col">
@@ -53,13 +54,13 @@ export default function Component() {
       </div>
       <div className="cards">
         <div className="card">
-          <span className="card-title">Rao web</span>
+          <span className="card-title">1. Rao web</span>
           <p className="card-text">
             {`L'agence ${sitename}  est ton alliée dans la création d'application pour le web. Quel que soit ton type d'application, à usage professionnel ou personnel, on dispose des outils nécessaires pour répondre à tes attentes. Et ce, dès la phase de conception jusqu'à sa finalisation. Tous nos sites sont disponibles hors ligne et peuvent être installés sur ton ordinateur ou ton smartphone.`}
           </p>
         </div>
         <div className="card">
-          <span className="card-title">Rao bot</span>
+          <span className="card-title">2. Rao bot</span>
           <p className="card-text">
             {
               "Rao bot est un service avec lequel tu peux automatiser tes transactions. Depuis 2016, nous sommes au service des professionnels et des particuliers qui veulent tirer parti du marché des cryptomonnaies. On dispose de compétences en matière de trading automatique pour tous les types de stratégies, que ce soit à court ou à long terme, sur une journée ou même sur plusieurs mois."
@@ -67,7 +68,7 @@ export default function Component() {
           </p>
         </div>
         <div className="card">
-          <span className="card-title">Rao mail server</span>
+          <span className="card-title">3. Rao mail server</span>
           <p className="card-text">
             {
               "La messagerie Rao est un service d'installation de messagerie efficace, sécurisé et fiable qui fournit une solution pour la livraison des messages de l'expéditeur aux destinataires. Il permet aux entreprises de simplifier leurs solutions de messagerie, offre un ensemble complet de fonctionnalités de gestion via API et en plus les comptes utilisateurs sont infinies."

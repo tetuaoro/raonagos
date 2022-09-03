@@ -4,9 +4,9 @@ export default function Component() {
   return (
     <section id="whoweare">
       <div className="presentation">
-        <h2>Qui sommes-nous ?</h2>
+        <h2>IA ORA NA</h2>
         <p className="md:text-center">
-          {`${sitename} est une agence numérique qui créée pour vous des sites web `}
+          {`${sitename} est une agence numérique qui créée à ta place des sites web `}
           <strong>
             <i>personnalisés</i>
           </strong>
@@ -18,7 +18,7 @@ export default function Component() {
           <strong>
             <i>performants</i>
           </strong>
-          {". Nous sommes spécialisés dans la création d'un produit final avec une grande expérience utilisateur, un design propre et des fonctionnalités riches."}
+          {". On est spécialisé dans la création d'un produit final avec une grande expérience utilisateur, un design propre et des fonctionnalités riches."}
         </p>
       </div>
       <div className="service-items">

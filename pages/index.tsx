@@ -1,13 +1,13 @@
 import Head from "next/head"
 import { siteurl, sitename, fbAppId } from "@libs/app"
 import Whoweare from "@components/whoweare"
-import Works from "@components/works"
 import Whatwedo from "@components/whatwedo"
+import Prices from "@components/prices"
 
 import type { NextPage } from "next"
 
 const title = `${sitename} - Créateur de site web, de bot de trading et de serveur de messagerie`
-const description = ""
+const description = "Rao nagos est une agence numérique qui créée à ta place des sites web personnalisés, des robots de trading uniques et des serveurs de messagerie performants. On est spécialisé dans la création d'un produit final avec une grande expérience utilisateur, un design propre et des fonctionnalités riches."
 
 const Page: NextPage = () => {
   return (
@@ -20,16 +20,16 @@ const Page: NextPage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={`${siteurl}/images/`} />
-        <meta property="og:image:alt" content={`Couverture media de ${sitename}`} />
-        <meta property="og:image:width" content="" />
-        <meta property="og:image:height" content="" />
-        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image" content={`${siteurl}/images/media_cover.webp`} />
+        <meta property="og:image:alt" content={`Couverture social de ${sitename}`} />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="727" />
+        <meta property="og:image:type" content="image/webp" />
         <script type="application/ld+json">{JSON.stringify({})}</script>
       </Head>
       <Whoweare />
-      <Works />
       <Whatwedo />
+      <Prices />
     </>
   )
 }

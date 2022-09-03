@@ -2,6 +2,8 @@ import { useState } from "react"
 import Image from "next/image"
 import { sitename } from "@libs/app"
 
+import hero from "@images/hero_bg.webp"
+
 import type { MouseEventHandler } from "react"
 
 export default function Header() {
@@ -11,7 +13,7 @@ export default function Header() {
   return (
     <header className="poppins">
       <div className="hero">
-        <Image src="/images/hero_bg.webp" layout="fill" objectFit="cover" objectPosition="26%" priority />
+        <Image src={hero} layout="fill" objectFit="cover" objectPosition="26%" priority alt="Rao nagos which build services" />
       </div>
       <div className="navbar">
         <div className="brand">{sitename}</div>
@@ -24,17 +26,17 @@ export default function Header() {
           <ul className={`menu${menuToggle ? " show" : ""}`}>
             <li className="menu-item">
               <a href="#whoweare" onClick={toggleMenu}>
-                Qui sommes-nous ?
+                Qui on est ?
               </a>
             </li>
             <li className="menu-item">
               <a href="#whatwedo" onClick={toggleMenu}>
-                Que faisons-nous ?
+                {"Qu'est-ce qu'on fait ?"}
               </a>
             </li>
             <li className="menu-item">
-              <a href="#" onClick={toggleMenu}>
-                Hero 3
+              <a href="#prices" onClick={toggleMenu}>
+                Et vos prix ?
               </a>
             </li>
           </ul>

@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header className="poppins">
       <div className="hero">
-        <Image src={hero} layout="fill" objectFit="cover" objectPosition="26%" priority alt="Rao nagos which build services" />
+        <Image src={hero} layout="fill" objectFit="cover" objectPosition="26%" priority alt="Rao nagos with services" />
       </div>
       <div className="navbar">
         <div className="brand">{sitename}</div>

@@ -80,8 +80,12 @@
     @apply after:content-['\_\_\_\_\_'] after:text-sm sm:after:text-lg after:text-primary-100 after:-tracking-[.2em];
   }
 
-  i {
+  i:not(.gray) {
     @apply text-primary-100;
+  }
+
+  i.gray {
+    @apply text-gray-600;
   }
 
   /* Whoweare */
@@ -157,11 +161,53 @@
     @apply hover:text-white hover:bg-primary-100 transition-colors duration-200 ease-in-out;
   }
 
+  .card:hover i {
+    @apply text-white transition-colors duration-200 ease-in-out;
+  }
+
   .card-title {
     @apply text-xl poppins poppins-700 text-center lg:text-left;
   }
 
+  .card-indication {
+    @apply block;
+  }
+
   .card-text {
     @apply mt-4;
+  }
+
+  /* PRICES */
+
+  table {
+    @apply w-full whitespace-nowrap;
+  }
+
+  .bordered {
+    @apply border-t border-gray-500;
+  }
+
+  tr:hover .bordered,
+  tr.hovered:hover * {
+    @apply text-white bg-primary-100 transition-colors duration-200 ease-in-out;
+  }
+
+  td:not(.th),
+  caption {
+    @apply text-gray-600;
+  }
+
+  td,
+  th {
+    @apply p-2 text-left;
+  }
+
+  tr td:not(.service) {
+    @apply border border-gray-600;
+  }
+
+  tr td:first-child,
+  tr td:last-child {
+    @apply border-l-0 border-r-0;
   }
 }

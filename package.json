@@ -1,6 +1,6 @@
 {
   "name": "raonagos",
-  "version": "0.1.5.1",
+  "version": "0.1.6",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -9,7 +9,7 @@ export default function Component() {
   return (
     <section id="whatwedo">
       <div className="flex flex-col items-center lg:block mb-4">
-        <h2>Nos oeuvres</h2>
+        <h2 className="observer">Nos oeuvres</h2>
         <p>{`Si tu cherches à renforcer ta présence sur la toile ou à maximiser ton temps sur les marchés mondiaux ou bien à envoyer des mails avec ton domaine en .pf de manière sécurisée, ${sitename} est ton agence avec ses 3 services :`}</p>
       </div>
       <div className="work-items">
@@ -65,7 +65,7 @@ export default function Component() {
         <div className="card">
           <span className="card-title">Rao bot</span>
           <span className="card-indication">
-            <i className="gray">jusqu'à 600 000 XPF</i>
+            <i className="gray">{"jusqu'à 600 000 XPF"}</i>
           </span>
           <p className="card-text">
             {

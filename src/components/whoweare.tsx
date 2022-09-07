@@ -4,7 +4,7 @@ export default function Component() {
   return (
     <section id="whoweare">
       <div className="presentation">
-        <h2>IA ORA NA</h2>
+        <h2 className="observer">IA ORA NA</h2>
         <p className="md:text-center">
           {`${sitename} est une agence numérique qui créée à ta place des sites web `}
           <strong>

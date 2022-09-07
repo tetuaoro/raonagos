@@ -1,4 +1,5 @@
 import Head from "next/head"
+import { useEffect } from "react"
 import { siteurl, sitename, fbAppId } from "@libs/app"
 import Whoweare from "@components/whoweare"
 import Whatwedo from "@components/whatwedo"
@@ -7,9 +8,24 @@ import Prices from "@components/prices"
 import type { NextPage } from "next"
 
 const title = `${sitename} - Créateur de site web, de bot de trading et de serveur de messagerie`
-const description = "Rao nagos est une agence numérique qui créée à ta place des sites web personnalisés, des robots de trading uniques et des serveurs de messagerie performants. On est spécialisé dans la création d'un produit final avec une grande expérience utilisateur, un design propre et des fonctionnalités riches."
+const description =
+  "Rao nagos est une agence numérique qui créée à ta place des sites web personnalisés, des robots de trading uniques et des serveurs de messagerie performants. On est spécialisé dans la création d'un produit final avec une grande expérience utilisateur, un design propre et des fonctionnalités riches."
 
 const Page: NextPage = () => {
+  useEffect(() => {
+    const show: IntersectionObserverCallback = (e) => {
+      e.forEach((element) => {
+        if (element.isIntersecting) {
+          const target = element.target as HTMLElement
+          target.classList.add("show")
+        }
+      })
+    }
+    const observer = new IntersectionObserver(show)
+    document.querySelectorAll(".observer")?.forEach((element) => observer.observe(element))
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <>
       <Head>

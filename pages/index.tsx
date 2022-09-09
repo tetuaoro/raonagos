@@ -1,15 +1,16 @@
 import Head from "next/head"
 import { useEffect } from "react"
-import { siteurl, sitename, fbAppId } from "@libs/app"
+import { siteurl, sitename, fbAppId, description } from "@libs/app"
+import Organization from "@libs/schema"
 import Whoweare from "@components/whoweare"
 import Whatwedo from "@components/whatwedo"
 import Prices from "@components/prices"
+import Details from "@components/details"
+import ContactForm from "@components/contactForm"
 
 import type { NextPage } from "next"
 
 const title = `${sitename} - Créateur de site web, de bot de trading et de serveur de messagerie`
-const description =
-  "Rao nagos est une agence numérique qui créée à ta place des sites web personnalisés, des robots de trading uniques et des serveurs de messagerie performants. On est spécialisé dans la création d'un produit final avec une grande expérience utilisateur, un design propre et des fonctionnalités riches."
 
 const Page: NextPage = () => {
   useEffect(() => {
@@ -41,11 +42,13 @@ const Page: NextPage = () => {
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="727" />
         <meta property="og:image:type" content="image/webp" />
-        <script type="application/ld+json">{JSON.stringify({})}</script>
+        <script type="application/ld+json">{JSON.stringify({Organization})}</script>
       </Head>
       <Whoweare />
       <Whatwedo />
       <Prices />
+      <Details />
+      <ContactForm />
     </>
   )
 }

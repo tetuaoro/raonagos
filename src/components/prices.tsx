@@ -4,7 +4,16 @@ const Caption = () => {
   const styles: CSSProperties = { captionSide: "bottom", textAlign: "left" }
   return (
     <caption style={styles}>
-      <small>Toute intervention après livraison est facturée, à la journée, de 7000 XPF</small>
+      <small>
+        Toute intervention après livraison est facturée, à la journée, de 7000 XPF
+        <br />
+        <span className="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </svg>
+          <span className="ml-2">en option</span>
+        </span>
+      </small>
     </caption>
   )
 }
@@ -53,8 +62,8 @@ const Tbody = () => {
       <tr>
         <td className="th">Prix</td>
         <td>40 000</td>
-        <td>*</td>
-        <td>*</td>
+        <td>-</td>
+        <td>-</td>
       </tr>
       <tr>
         <td className="th">
@@ -117,10 +126,26 @@ const Tbody = () => {
         </td>
       </tr>
       <tr>
+        <td className="th">
+          <small>Progressive Web App</small>
+        </td>
+        <td></td>
+        <td></td>
+        <td>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </svg>
+        </td>
+      </tr>
+      <tr>
         <td className="th">Mensualité</td>
         <td></td>
-        <td>{"7000 + "}</td>
-        <td>{"7000 + "}</td>
+        <td>
+          <small>{"à partir de 7000"}</small>
+        </td>
+        <td>
+          <small>*</small>
+        </td>
       </tr>
       <tr>
         <td className="th">
@@ -164,6 +189,18 @@ const Tbody = () => {
         <td></td>
       </tr>
       <tr>
+        <td className="th">
+          <small>Rapport/Alerte</small>
+        </td>
+        <td></td>
+        <td>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </svg>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
         <td className="th">Maintenance</td>
         <td></td>
         <td>
@@ -177,7 +214,7 @@ const Tbody = () => {
         <td className="th">
           <small>Durée min. de conception</small>
         </td>
-        <td>{"1 mois"}</td>
+        <td>{"1-3 mois"}</td>
       </tr>
       <Tr />
       <tr className="transition-0">
@@ -195,6 +232,34 @@ const Tbody = () => {
         <td></td>
         <td>600 000</td>
         <td>*</td>
+      </tr>
+      <tr>
+        <td className="th">Cloud</td>
+        <td></td>
+        <td>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </svg>
+        </td>
+        <td>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td className="th">Self hosting</td>
+        <td></td>
+        <td>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </svg>
+        </td>
+        <td>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </svg>
+        </td>
       </tr>
       <tr>
         <td className="th">Maintenance</td>

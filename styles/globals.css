@@ -11,7 +11,7 @@
 
   body,
   .__next {
-    @apply m-0 p-0 text-lg;
+    @apply m-0 p-0 text-lg overflow-x-hidden;
     font-family: "Open Sans", sans-serif;
   }
 
@@ -84,6 +84,11 @@
 
   .observer.show {
     @apply scale-100;
+  }
+
+  .full-bleed {
+    @apply w-screen;
+    margin-left: calc(50% - 50vw);
   }
 
   h2 {
@@ -209,7 +214,11 @@
   }
 
   tr.transition-0 td {
-    @apply hover:translate-x-4 transition-all duration-300 ease-in-out;
+    @apply hover:translate-x-4 transition-transform duration-300 ease-in-out;
+  }
+
+  tr.transition-0 td:hover svg {
+    @apply scale-125 transition-transform duration-300 ease-in-out;
   }
 
   td:not(.th),
@@ -229,5 +238,23 @@
   tr td:first-child,
   tr td:last-child {
     @apply border-l-0 border-r-0;
+  }
+
+  /* CONTACT */
+  .form {
+    @apply w-full;
+    @apply flex flex-col items-center gap-y-8;
+  }
+
+  .form input,
+  .form textarea {
+    @apply py-2 px-4 w-full md:w-1/2;
+    @apply transition-all duration-200 ease-in-out;
+    @apply border-2 hover:scale-105 focus:scale-105 focus-visible:border-yellow-400 outline-none focus:border-yellow-400 focus-within:border-yellow-400 border-primary-100 rounded-r-3xl rounded-l-3xl;
+  }
+
+  .form button {
+    @apply py-2 px-4;
+    @apply border-2 border-primary-100 rounded-3xl hover:bg-primary-100 transition-colors duration-200 ease-in-out hover:text-white;
   }
 }

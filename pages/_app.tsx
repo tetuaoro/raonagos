@@ -1,5 +1,7 @@
-import Header from "@components/header"
 import "@styles/globals.css"
+import Header from "@components/header"
+import Footer from "@components/footer"
+
 import type { AppProps } from "next/app"
 
 export default function MyApp({ Component, pageProps }: AppProps) {
@@ -9,6 +11,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <main>
         <Component {...pageProps} />
       </main>
+      <Footer />
     </>
   )
 }

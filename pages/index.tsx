@@ -16,9 +16,11 @@ const Page: NextPage = () => {
   useEffect(() => {
     const show: IntersectionObserverCallback = (e) => {
       e.forEach((element) => {
+        const target = element.target as HTMLElement
         if (element.isIntersecting) {
-          const target = element.target as HTMLElement
           target.classList.add("show")
+        } else {
+          target.classList.remove("show")
         }
       })
     }
@@ -48,7 +50,7 @@ const Page: NextPage = () => {
       <Whatwedo />
       <Prices />
       <Details />
-      <ContactForm />
+      {/* <ContactForm /> */}
     </>
   )
 }

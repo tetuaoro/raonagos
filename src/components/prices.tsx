@@ -214,7 +214,7 @@ const Tbody = () => {
         <td className="th">
           <small>Durée min. de conception</small>
         </td>
-        <td>{"1-3 mois"}</td>
+        <td>{"3-6 mois"}</td>
       </tr>
       <Tr />
       <tr className="transition-0">
@@ -279,7 +279,7 @@ const Tbody = () => {
         <td className="th">
           <small>{"Durée min. d'installation"}</small>
         </td>
-        <td>{"1 heure"}</td>
+        <td>{"1 journée"}</td>
       </tr>
     </tbody>
   )

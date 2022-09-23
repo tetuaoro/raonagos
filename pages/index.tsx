@@ -50,7 +50,7 @@ const Page: NextPage = () => {
       <Whatwedo />
       <Prices />
       <Details />
-      {/* <ContactForm /> */}
+      <ContactForm />
     </>
   )
 }

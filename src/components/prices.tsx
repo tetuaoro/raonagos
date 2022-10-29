@@ -111,7 +111,7 @@ const Tbody = () => {
       </tr>
       <tr>
         <td className="th">
-          <small>SEO</small>
+          <small>SEO Optimisation</small>
         </td>
         <td></td>
         <td>

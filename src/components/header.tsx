@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useParallax } from "react-scroll-parallax"
 import Image from "next/image"
 import { sitename } from "@libs/app"
 
@@ -8,11 +9,12 @@ import type { MouseEventHandler } from "react"
 
 export default function Header() {
   const [menuToggle, setMenuToggle] = useState(false)
+  const { ref } = useParallax<HTMLDivElement>({ speed: 50 })
   const toggleMenu: MouseEventHandler = (e) => ((e.target as HTMLElement).nodeName === "A" ? setMenuToggle(false) : setMenuToggle(!menuToggle))
 
   return (
     <header className="poppins">
-      <div className="hero">
+      <div ref={ref} className="hero">
         <Image src={hero} layout="fill" objectFit="cover" objectPosition="26%" priority alt="Rao nagos with services" />
       </div>
       <div className="navbar">
@@ -44,7 +46,7 @@ export default function Header() {
       </div>
       <section className="absolute top-0 w-full h-full flex flex-col justify-center text-white items-center text-center">
         <h1 className="poppins-700 text-7xl">AGENCE DIGITALE</h1>
-        <p className="mt-8 md:mt-12">Ton créateur de site web, de bot de trading et de serveur de messagerie.</p>
+        <p className="mt-8 md:mt-12">Ton créateur de site web, de bot automatisé et de serveur de messagerie.</p>
       </section>
     </header>
   )

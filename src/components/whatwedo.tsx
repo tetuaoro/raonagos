@@ -10,7 +10,7 @@ export default function Component() {
     <section id="whatwedo">
       <div className="flex flex-col items-center lg:block mb-4">
         <h2 className="observer">Nos oeuvres</h2>
-        <p>{`Si tu cherches à renforcer ta présence sur la toile ou à maximiser ton temps sur les marchés mondiaux ou bien à envoyer des mails avec ton domaine en .pf de manière sécurisée, ${sitename} est ton agence avec ses 3 services :`}</p>
+        <p>{`Si tu cherches à renforcer ta présence sur la toile ou à maximiser ton temps sur les marchés mondiaux ou bien à envoyer des mails avec ton domaine en .pf de manière sécurisée, ${sitename}, ton agence te propose 3 services :`}</p>
       </div>
       <div className="work-items">
         <div className="flex flex-col">
@@ -47,7 +47,7 @@ export default function Component() {
             <p className="text-center p-4">
               {"Quatrième site web de l'agence : "}
               <i>rapide</i>
-              {" et disponible hors-ligne. "}
+              {" et consultable hors-ligne. "}
             </p>
           </div>
         </div>
@@ -59,22 +59,22 @@ export default function Component() {
             <i className="gray">40 000 XPF</i>
           </span>
           <p className="card-text">
-            {`L'agence ${sitename}  est ton alliée dans la création d'application pour le web. Quel que soit ton type d'application, à usage professionnel ou personnel, on dispose des outils nécessaires pour répondre à tes attentes. Et ce, dès la phase de conception jusqu'à sa finalisation. Tous nos sites sont disponibles hors ligne et peuvent être installés sur ton ordinateur ou ton smartphone.`}
+            {`L'agence ${sitename}  est ton alliée dans la création d'application pour le web. Quel que soit ton type d'application, à usage professionnel ou personnel, on dispose des outils nécessaires pour répondre à tes attentes. Et ce, dès la phase de conception jusqu'à sa finalisation. Tous nos sites sont consultables hors ligne et peuvent être installés sur ton ordinateur ou ton smartphone.`}
           </p>
         </div>
         <div className="card">
           <span className="card-title">Rao bot</span>
           <span className="card-indication">
-            <i className="gray">{"jusqu'à 600 000 XPF"}</i>
+            <i className="gray">150 000 XPF</i>
           </span>
           <p className="card-text">
             {
-              "Rao bot est un service avec lequel tu peux automatiser tes transactions. Depuis 2016, nous sommes au service des professionnels et des particuliers qui veulent tirer parti du marché des cryptomonnaies. On dispose de compétences en matière de trading automatique pour tous les types de stratégies, que ce soit à court ou à long terme, sur une journée ou même sur plusieurs mois."
+              "Rao bot est un service avec lequel tu peux automatiser tes actions et rentabiliser ton temps. Par exemple depuis 2016, nous sommes au service des professionnels et des particuliers qui veulent tirer parti du marché des cryptomonnaies. On dispose de compétences en matière de trading automatique pour tous les types de stratégies, que ce soit à court ou à long terme, sur une journée ou même sur plusieurs mois."
             }
           </p>
         </div>
         <div className="card">
-          <span className="card-title">3. Rao mail server</span>
+          <span className="card-title">Rao mail server</span>
           <span className="card-indication">
             <i className="gray">600 000 XPF</i>
           </span>

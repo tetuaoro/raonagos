@@ -10,7 +10,7 @@ export default function Component() {
           <strong>
             <i>personnalisés</i>
           </strong>
-          {", des robots de trading "}
+          {", des robots automatisés "}
           <strong>
             <i>uniques</i>
           </strong>

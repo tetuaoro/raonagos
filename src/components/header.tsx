@@ -9,7 +9,9 @@ import type { MouseEventHandler } from "react"
 
 export default function Header() {
   const [menuToggle, setMenuToggle] = useState(false)
-  const { ref } = useParallax<HTMLDivElement>({ speed: 50 })
+  const { ref } = useParallax<HTMLDivElement>({
+    speed: -100,
+  })
   const toggleMenu: MouseEventHandler = (e) => ((e.target as HTMLElement).nodeName === "A" ? setMenuToggle(false) : setMenuToggle(!menuToggle))
 
   return (

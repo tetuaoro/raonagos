@@ -2,7 +2,7 @@ import { sitename } from "@libs/app"
 
 export default function Component() {
   return (
-    <section id="whoweare">
+    <section id="whoweare" className="relative z-10 bg-white p-3 py-12">
       <div className="presentation">
         <h2 className="observer">IA ORA NA</h2>
         <p className="md:text-center">

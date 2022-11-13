@@ -44,7 +44,7 @@ const Page: NextPage = () => {
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="727" />
         <meta property="og:image:type" content="image/webp" />
-        <script type="application/ld+json">{JSON.stringify(Organization)}</script>
+        <script key={"structured-data"} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(Organization) }} />
       </Head>
       <Whoweare />
       <Whatwedo />

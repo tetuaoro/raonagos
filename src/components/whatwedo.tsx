@@ -7,7 +7,7 @@ import { sitename } from "@libs/app"
 
 export default function Component() {
   return (
-    <section id="whatwedo" className="relative z-10 bg-black text-white full-bleed p-3 py-12">
+    <section id="whatwedo" className="relative z-10 bg-black text-white full-bleed p-3 md:p-6 py-12">
       <div className="flex flex-col items-center lg:block mb-4">
         <h2 className="observer">Nos oeuvres</h2>
         <p>{`Si tu cherches à renforcer ta présence sur la toile ou à maximiser ton temps sur les marchés mondiaux ou bien à envoyer des mails avec ton domaine en .pf de manière sécurisée, ${sitename}, ton agence te propose 3 services :`}</p>

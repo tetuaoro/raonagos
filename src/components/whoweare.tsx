@@ -6,7 +6,7 @@ export default function Component() {
       <div className="presentation">
         <h2 className="observer">IA ORA NA</h2>
         <p className="md:text-center">
-          {`${sitename} est une agence numérique qui créée à ta place des sites web `}
+          {`${sitename} est une agence numérique qui développe à ta place des sites web `}
           <strong>
             <i>personnalisés</i>
           </strong>
@@ -18,7 +18,7 @@ export default function Component() {
           <strong>
             <i>performants</i>
           </strong>
-          {". On est spécialisé dans la création d'un produit final avec une grande expérience utilisateur, un design propre et des fonctionnalités riches."}
+          {". Nous sommes spécialisé dans la création d'un produit final avec une grande expérience utilisateur, un design propre et des fonctionnalités riches."}
         </p>
       </div>
       <div className="service-items">

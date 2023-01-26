@@ -5,7 +5,7 @@ import { sitename } from "@libs/app"
 
 import hero from "@images/hero_bg.webp"
 
-import type { MouseEventHandler } from "react"
+import type { MouseEventHandler, CSSProperties } from "react"
 
 export default function Header() {
   const [menuToggle, setMenuToggle] = useState(false)
@@ -13,6 +13,9 @@ export default function Header() {
     speed: -100,
   })
   const toggleMenu: MouseEventHandler = (e) => ((e.target as HTMLElement).nodeName === "A" ? setMenuToggle(false) : setMenuToggle(!menuToggle))
+  const shadowMyText: CSSProperties = {
+    textShadow: "0.1rem 0.1rem 0.8rem #00abf3",
+  }
 
   return (
     <header className="poppins">
@@ -30,25 +33,29 @@ export default function Header() {
           <ul className={`menu${menuToggle ? " show" : ""}`}>
             <li className="menu-item">
               <a href="#whoweare" onClick={toggleMenu}>
-                Qui on est ?
+                Qui sommes-nous ?
               </a>
             </li>
             <li className="menu-item">
               <a href="#whatwedo" onClick={toggleMenu}>
-                {"Qu'est-ce qu'on fait ?"}
+                Nos services
               </a>
             </li>
             <li className="menu-item">
               <a href="#prices" onClick={toggleMenu}>
-                Et vos prix ?
+                Nos tarifs
               </a>
             </li>
           </ul>
         </nav>
       </div>
       <section className="absolute top-0 w-full h-full flex flex-col justify-center text-white items-center text-center">
-        <h1 className="poppins-700 text-7xl">AGENCE DIGITALE</h1>
-        <p className="mt-8 md:mt-12">Ton créateur de site web, de bot automatisé et de serveur de messagerie.</p>
+        <h1 className="poppins-700 text-7xl" style={shadowMyText}>
+          AGENCE DIGITALE
+        </h1>
+        <p className="mt-8 md:mt-12" style={shadowMyText}>
+          Ton créateur de site web, de bot automatisé et de serveur de messagerie.
+        </p>
       </section>
     </header>
   )

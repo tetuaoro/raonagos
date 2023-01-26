@@ -59,7 +59,7 @@ export default function Component() {
             <i className="gray">40 000 XPF</i>
           </span>
           <p className="card-text">
-            {`L'agence ${sitename}  est ton alliée dans la création d'application pour le web. Quel que soit ton type d'application, à usage professionnel ou personnel, on dispose des outils nécessaires pour répondre à tes attentes. Et ce, dès la phase de conception jusqu'à sa finalisation. Tous nos sites sont consultables hors ligne et peuvent être installés sur ton ordinateur ou ton smartphone.`}
+            {`Notre agence ${sitename}  est ton alliée dans la création d'application pour le web. Quel que soit ton type d'application, à usage professionnel ou personnel, nous disposons des outils nécessaires pour répondre à tes attentes. Et ce, dès la phase de conception jusqu'à sa finalisation. Tous nos sites sont consultables hors ligne et peuvent être installés sur ton ordinateur ou ton smartphone.`}
           </p>
         </div>
         <div className="card">
@@ -69,14 +69,14 @@ export default function Component() {
           </span>
           <p className="card-text">
             {
-              "Rao bot est un service avec lequel tu peux automatiser tes actions et rentabiliser ton temps. Par exemple depuis 2016, nous sommes au service des professionnels et des particuliers qui veulent tirer parti du marché des cryptomonnaies. On dispose de compétences en matière de trading automatique pour tous les types de stratégies, que ce soit à court ou à long terme, sur une journée ou même sur plusieurs mois."
+              "Rao bot est un service avec lequel tu peux automatiser tes actions et rentabiliser ton temps. Par exemple depuis 2016, nous sommes au service des professionnels et des particuliers qui veulent tirer parti du marché des cryptomonnaies. Nous disposons de compétences en matière de trading automatique pour tous les types de stratégies, que ce soit à court ou à long terme, sur une journée ou même sur plusieurs mois."
             }
           </p>
         </div>
         <div className="card">
           <span className="card-title">Rao mail server</span>
           <span className="card-indication">
-            <i className="gray">600 000 XPF</i>
+            <i className="gray">150 000 XPF</i>
           </span>
           <p className="card-text">
             {

@@ -5,7 +5,7 @@ const Caption = () => {
   return (
     <caption style={styles}>
       <small>
-        Toute intervention après livraison est facturée, à la journée, de 7000 XPF
+        Toute intervention après livraison est facturée, à la journée, de 15 700 XPF ainsi qu'une mensualité de 7000 XPF.
         <br />
         <span className="flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
@@ -154,16 +154,6 @@ const Tbody = () => {
         </td>
       </tr>
       <tr>
-        <td className="th">Mensualité</td>
-        <td></td>
-        <td>
-          <small>{"à partir de 7000"}</small>
-        </td>
-        <td>
-          <small>*</small>
-        </td>
-      </tr>
-      <tr>
         <td className="th">
           <small>Durée min. de conception</small>
         </td>
@@ -246,7 +236,7 @@ const Tbody = () => {
       <tr>
         <td className="th">Prix</td>
         <td></td>
-        <td>600 000</td>
+        <td>150 000</td>
         <td>*</td>
       </tr>
       <tr>

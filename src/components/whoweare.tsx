@@ -6,19 +6,19 @@ export default function Component() {
       <div className="presentation">
         <h2 className="observer">IA ORA NA</h2>
         <p className="md:text-center">
-          {`${sitename} est une agence numérique qui développe à ta place des sites web `}
+          {`${sitename} est une agence numérique spécialisée dans la création de sites web `}
           <strong>
             <i>personnalisés</i>
           </strong>
-          {", des robots automatisés "}
+          {", de robots automatisés "}
           <strong>
             <i>uniques</i>
           </strong>
-          {" et des serveurs de messagerie "}
+          {" et de serveurs de messagerie "}
           <strong>
             <i>performants</i>
           </strong>
-          {". Nous sommes spécialisé dans la création d'un produit final avec une grande expérience utilisateur, un design propre et des fonctionnalités riches."}
+          {". L'entreprise se concentre sur la création d'un produit final avec une grande expérience utilisateur, un design propre et des fonctionnalités riches pour ses clients."}
         </p>
       </div>
       <div className="service-items">

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useParallax } from "react-scroll-parallax"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { sitename } from "@libs/app"
 
 import hero from "@images/hero_bg.webp"

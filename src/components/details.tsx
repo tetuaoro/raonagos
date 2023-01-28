@@ -8,7 +8,7 @@ export default function Component() {
         </div>
         <div className="observer">
           <h3 className="text-4xl font-bold">2+</h3>
-          <span className="text-xl">Server de messagerie installé</span>
+          <span className="text-xl">Serveur de messagerie installé</span>
         </div>
         <div className="observer">
           <h3 className="text-4xl font-bold">4+</h3>

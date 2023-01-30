@@ -35,7 +35,7 @@ export default function Component() {
   return (
     <section id="prices">
       <div className="flex justify-center lg:justify-end">
-        <h2 className="observer">Détails des tarifs</h2>
+        <h2 className="h2 observer">Détails des tarifs</h2>
       </div>
       <div className="overflow-x-auto">
         <table>

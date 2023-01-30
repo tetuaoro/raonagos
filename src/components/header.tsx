@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useParallax } from "react-scroll-parallax"
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { sitename } from "@libs/app"
 
 import hero from "@images/hero_bg.webp"
@@ -16,11 +16,15 @@ export default function Header() {
   const shadowMyText: CSSProperties = {
     textShadow: "0.1rem 0.1rem 0.8rem #00abf3",
   }
+  const imageStyling: CSSProperties = {
+    objectFit: "cover",
+    objectPosition: "26%",
+  }
 
   return (
     <header className="poppins">
       <div ref={ref} className="hero">
-        <Image src={hero} layout="fill" objectFit="cover" objectPosition="26%" priority alt="Rao nagos with services" />
+        <Image src={hero} fill style={imageStyling} priority alt="Rao nagos with services" />
       </div>
       <div className="navbar">
         <div className="brand">{sitename}</div>
@@ -54,7 +58,7 @@ export default function Header() {
           AGENCE DIGITALE
         </h1>
         <p className="mt-8 md:mt-12" style={shadowMyText}>
-          Ton créateur de site web, de bot automatisé et de serveur de messagerie.
+          {"Ton créateur de site web, d'automatisation de tâche et de serveur de messagerie."}
         </p>
       </section>
     </header>

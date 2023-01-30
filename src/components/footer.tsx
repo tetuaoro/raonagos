@@ -1,15 +1,20 @@
 import { sitename, fbAppId } from "@libs/app"
 import { useEffect, useState } from "react"
+import Link from "next/link"
+import { useRouter } from "next/router"
 
-export default function Header() {
+export default function Footer() {
   const [facebookUrl, setFbURL] = useState(`https://www.facebook.com/raonagos`)
 
   useEffect(() => {
     if (navigator.userAgent.match("Android|iPhone|iPad")) setFbURL(`fb://profile/${fbAppId}`)
   }, [])
 
+  const { pathname } = useRouter()
+  const match = pathname.match(/^(\/terms|\/privacy)$/)
+
   return (
-    <footer className="full-bleed bg-primary-100 text-white py-4 lg:py-12 px-4 lg:px-20">
+    <footer className={`full-bleed ${match ? "bg-gray-200" : "bg-primary-100 text-white"} py-4 lg:py-12 px-4 lg:px-20`}>
       <div className="flex flex-col justify-evenly lg:flex-row gap-y-8">
         <div>
           <div className="flex flex-col gap-y-2">
@@ -69,10 +74,10 @@ export default function Header() {
       <div className="flex flex-col justify-center lg:flex-row gap-x-6 gap-y-2 text-sm mt-12">
         <p>© 2020 - 2022 {sitename} - Agence digitale</p>
         <p>
-          <a href="#">Mentions légales</a>
+          <Link href="/terms">Mentions légales</Link>
         </p>
         <p>
-          <a href="#">Politiques de confidentialité</a>
+          <Link href="/privacy">Politiques de confidentialité</Link>
         </p>
       </div>
     </footer>

@@ -31,7 +31,7 @@ export default function Component() {
   return (
     <section id="contact">
       <div className="text-center">
-        <h2>Nous contacter</h2>
+        <h2 className="h2">Nous contacter</h2>
       </div>
       <div className="flex flex-col items-center">
         <form onSubmit={onSubmit} className="form">

@@ -1,4 +1,4 @@
-import Image from "next/legacy/image"
+import Image from "next/image"
 
 import w1 from "@images/w-1.webp"
 import w2 from "@images/w-2.webp"
@@ -9,14 +9,16 @@ export default function Component() {
   return (
     <section id="whatwedo" className="relative z-10 bg-black text-white full-bleed p-3 md:p-6 py-12">
       <div className="flex flex-col items-center lg:block mb-4">
-        <h2 className="observer">Nos oeuvres</h2>
+        <h2 className="h2 observer">Nos oeuvres</h2>
         <p>{`Si tu cherches à renforcer ta présence sur la toile ou à maximiser ton temps sur les marchés mondiaux ou bien à envoyer des mails avec ton domaine en .pf de manière sécurisée, nous te proposons 3 services :`}</p>
       </div>
       <div className="work-items">
         <div className="flex flex-col">
           <div className="overlay-image">
-            <Image src={w1} placeholder="blur" alt="Man who lauched our trading bot" />
-            <div>
+            <div className="embed-overlay">
+              <Image src={w1} placeholder="blur" alt="Man who lauched our trading bot" />
+            </div>
+            <div className="overlay-text">
               <span className="poppins poppins-700 text-2xl">Rao bot</span>
               <p className="text-center p-4">
                 <span className="italic">Automate place order</span>
@@ -28,8 +30,10 @@ export default function Component() {
             </div>
           </div>
           <div className="overlay-image">
-            <Image src={w4} placeholder="blur" alt="An email which crossed our server" />
-            <div>
+            <div className="embed-overlay">
+              <Image src={w4} placeholder="blur" alt="An email which crossed our server" />
+            </div>
+            <div className="overlay-text">
               <span className="poppins poppins-700 text-2xl">Rao mail server</span>
               <p className="text-center p-4">
                 {"Comptes utilisateurs "}
@@ -41,8 +45,10 @@ export default function Component() {
           </div>
         </div>
         <div className="overlay-image">
-          <Image src={w2} height={594} placeholder="blur" alt="Our 4th website : chanson du fenua" />
-          <div>
+          <div className="embed-overlay">
+            <Image src={w2} height={594} placeholder="blur" alt="Our 4th website : chanson du fenua" />
+          </div>
+          <div className="overlay-text">
             <span className="poppins poppins-700 text-2xl">Rao web</span>
             <p className="text-center p-4">
               {"Quatrième site web de l'agence : "}
@@ -68,9 +74,7 @@ export default function Component() {
             <i className="gray">150 000 XPF</i>
           </span>
           <p className="card-text">
-            {
-              "Rao bot est un service avec lequel tu peux automatiser tes actions et rentabiliser ton temps. Par exemple depuis 2016, nous sommes au service des professionnels et des particuliers qui veulent tirer parti du marché des cryptomonnaies. Nous disposons de compétences en matière de trading automatique pour tous les types de stratégies, que ce soit à court ou à long terme, sur une journée ou même sur plusieurs mois."
-            }
+            {`Rao bot est un service avec lequel tu peux automatiser tes actions et rentabiliser ton temps. Par exemple depuis 2016, nous sommes au service des professionnels et des particuliers qui veulent tirer parti du marché des cryptomonnaies. Nous disposons de compétences en matière de trading automatique, d'envoie de message électronique programmé ou d'optimisation d'espace disque des serveurs.`}
           </p>
         </div>
         <div className="card">

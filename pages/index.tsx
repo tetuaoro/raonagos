@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { siteurl, sitename, fbAppId, description } from "@libs/app"
 import Organization from "@libs/schema"
 import Whoweare from "@components/whoweare"
@@ -7,12 +7,23 @@ import Whatwedo from "@components/whatwedo"
 import Prices from "@components/prices"
 import Details from "@components/details"
 import ContactForm from "@components/contactForm"
+import CookieConsent from "react-cookie-consent"
 
 import type { NextPage } from "next"
 
-const title = `${sitename} - Créateur de site web, de bot de trading et de serveur de messagerie`
+const title = `${sitename} - Créateur de site web, d'automatisation de tâche et de serveur de messagerie`
 
 const Page: NextPage = () => {
+  const [showCookies, setShowCookies] = useState(false)
+
+  useEffect(() => {
+    const id = setTimeout(() => {
+      setShowCookies(true)
+    }, 11000)
+
+    return () => clearTimeout(id)
+  }, [])
+
   useEffect(() => {
     const show: IntersectionObserverCallback = (e) => {
       e.forEach((element) => {
@@ -51,6 +62,11 @@ const Page: NextPage = () => {
       <Prices />
       <Details />
       <ContactForm />
+      {showCookies && (
+        <CookieConsent expires={90} cookieName="rao_nagos_acceptcgu" buttonText="Bien sûr" buttonStyle={{ color: "white", backgroundColor: "#00abf3", borderRadius: "15px" }}>
+          {"En poursuivant votre navigation, vous acceptez les conditions d'utilisation."}
+        </CookieConsent>
+      )}
     </>
   )
 }

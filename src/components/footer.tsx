@@ -1,4 +1,4 @@
-import { sitename, fbAppId } from "@libs/app"
+import { sitename, fbAppId, telephone } from "@libs/app"
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/router"
@@ -19,7 +19,7 @@ export default function Footer() {
         <div>
           <div className="flex flex-col gap-y-2">
             <div className="flex items-center">
-              <h3 className="text-xl font-bold">Horaires</h3>
+              <h3 className="text-xl font-bold">Horaires publics</h3>
             </div>
             <span>Lundi à Jeudi - 09 : 00 - 14 : 00</span>
             <span>Vendredi - 09 : 00 - 12 : 00</span>
@@ -44,7 +44,7 @@ export default function Footer() {
                 />
               </svg>
               <span className="ml-2">
-                <a href="tel:+68987323795">+689 87323795</a>
+                <a href={`tel:${telephone}`}>{telephone}</a>
               </span>
             </div>
             <div className="flex items-center">
@@ -60,13 +60,13 @@ export default function Footer() {
         <div>
           <div className="flex flex-col gap-y-2">
             <div className="flex items-center">
-              <h3 className="text-xl font-bold">Réseaux sociaux</h3>
+              <h3 className="text-xl font-bold">Nous suivre</h3>
             </div>
             <a href={facebookUrl} className="flex items-center" target={facebookUrl.startsWith("https") ? "_blank" : ""} rel="noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-facebook" viewBox="0 0 16 16">
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
               </svg>
-              <span className="ml-2">raonagos</span>
+              <span className="ml-2">/raonagos</span>
             </a>
           </div>
         </div>

@@ -214,7 +214,7 @@ export default function Component() {
         <strong>9.7</strong> Les moyens de paiement acceptés sont soit en liquide avec facture ou soit par virement bancaire sans facture.
       </p>
       <p className="pt-4">
-        <strong>9.8</strong> S&apos;il y a lieu de dépenses autres, par exemple l&apos;achat d&apos;un serveur ou d&apos;un nom de domaine, ces prix seront facturés au demandeur du service et réglés
+        <strong>9.8</strong> S&apos;il y a lieu de dépenses autres, par exemple l&apos;achat d&apos;un serveur ou d&apos;un nom de domaine, elles seront facturés au demandeur du service et réglés
         sans délais.
       </p>
       {/* ################# */}

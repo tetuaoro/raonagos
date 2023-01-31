@@ -8,11 +8,25 @@ export default function Component() {
       <p className="text-sm italic text-gray-500">mise à jour le 19 janvier 2023</p>
       <h2 className="text-xl font-semibold mt-24">ÉDITEUR</h2>
       <p className="pt-4">Le site est édité par Rao Nagos, petite entreprise, immatriculée au RCS de PAPEETE sous le numéro {rcs}.</p>
-      <p className="pt-4">Téléphone&nbsp;: {telephone}</p>
-      <p>E-mail&nbsp;: contact@rao-nagos.pf</p>
+      <p className="pt-4">
+        Téléphone&nbsp;:{" "}
+        <a className="text-blue-500" href={`tel:${telephone}`}>
+          {telephone}
+        </a>
+      </p>
+      <p>
+        E-mail&nbsp;:{" "}
+        <a className="text-blue-500" href="mailto:contact@rao-nagos.pf?subject=terms">
+          contact@rao-nagos.pf
+        </a>
+      </p>
       {/* ############ */}
       <h2 className="text-xl font-semibold mt-24">HÉBERGEUR</h2>
-      <p className="pt-4">Vercel.com</p>
+      <p className="pt-4">
+        <a href="https://vercel.com" target="_blank" rel="noreferrer" className="text-blue-500">
+          Vercel.com
+        </a>
+      </p>
       {/* ############ */}
       <h2 className="text-xl font-semibold mt-24">PROPRIÉTÉ INTELLECTUELLE</h2>
       <p className="pt-4">

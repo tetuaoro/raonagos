@@ -1,10 +1,11 @@
 import { siteurl } from "@libs/app"
+import Link from "next/link"
 
 export default function Component() {
   return (
     <div className="mx-8 md:mx-32 lg:mx-64 ">
       <h1 className="text-4xl">Politiques de confidentialité</h1>
-      <p className="text-sm italic text-gray-500">mise à jour le 20 janvier 2023</p>
+      <p className="text-sm italic text-gray-500">mise à jour le 31 janvier 2023</p>
       <h2 className="text-xl font-semibold mt-24">ARTICLE 1&nbsp;: PRINCIPES GÉNÉRAUX EN MATIÈRE DE COLLECTE ET DE TRAITEMENT DE DONNÉES</h2>
       <p className="pt-4">
         Conformément aux dispositions de l&apos;article 5 du Règlement européen 2016/679, la collecte et le traitement des données des utilisateurs du site respectent les principes suivants&nbsp;:
@@ -92,8 +93,9 @@ export default function Component() {
         <a className="text-blue-500" href="mailto:contact@rao-nagos.pf?subject=privacy">
           contact@rao-nagos.pf
         </a>
-        . Le responsable du traitement des données est chargé de déterminer les finalités et les moyens mis au service du traitement des données à caractère personnel.
+        .
       </p>
+      <p className="pt-4">Le responsable du traitement des données est chargé de déterminer les finalités et les moyens mis au service du traitement des données à caractère personnel.</p>
       <p className="pt-4">
         <strong>B. </strong>OBLIGATIONS DU RESPONSABLE DU TRAITEMENT DES DONNÉES
       </p>
@@ -139,7 +141,7 @@ export default function Component() {
         Pour l&apos;utilisation de fichiers cookies impliquant la sauvegarde et l&apos;analyse de données à caractère personnel, le consentement de l&apos;utilisateur est nécessairement demandé.
       </p>
       <p className="pt-4">
-        Ce consentement de l&apos;utilisateur est considéré comme valide pour une durée de 3 (trois) mois maximum. A l&apos;issue de cette période, le site demandera à nouveau l&apos;autorisation de
+        Ce consentement de l&apos;utilisateur est considéré comme valide pour une durée de 3 (trois) mois maximum. À l&apos;issue de cette période, le site demandera à nouveau l&apos;autorisation de
         l&apos;utilisateur pour enregistrer des fichiers cookies sur son disque dur.
       </p>
       {/* ################ */}
@@ -149,9 +151,83 @@ export default function Component() {
         Par conséquent, l&apos;utilisateur est invité à venir consulter régulièrement cette politique de confidentialité afin de se tenir informé des derniers changements qui lui seront apportés.
       </p>
       <p className="pt-4">
-        Il est porté à la connaissance de l&apos;utilisateur que la dernière mise à jour de la présente politique de confidentialité est intervenue le&nbsp;: 20 (vingt) / janvier / 2023 (deux mille
-        vingt-trois).
+        Il est porté à la connaissance de l&apos;utilisateur que la dernière mise à jour de la présente politique de confidentialité est intervenue le&nbsp;: 31 (trente-un) / janvier / 2023 (deux
+        mille vingt-trois).
       </p>
+      {/* ################# */}
+      <p className="pt-24 italic">Les prochains articles évoqueront comment les services proposés par l&apos;agence Rao Nagos doivent être considérés.</p>
+      {/* ################# */}
+      <h2 id="cookies" className="text-xl font-semibold mt-24">
+        ARTICLE 7&nbsp;: SERVICES
+      </h2>
+      <p className="pt-4">Rao Nagos propose 3 services&nbsp;:</p>
+      <ul className="list-disc pl-8 pt-4">
+        <li>Rao web pour la conception de site web&nbsp;;</li>
+        <li>Rao bot pour l&apos;automatisation de tâche répétitive&nbsp;;</li>
+        <li>Rao mail server pour l&apos;installation d&apos;une messagerie électronique.</li>
+      </ul>
+      <p className="pt-4">Ces services peuvent être vendus en dehors de la Polynésie Française.</p>
+      {/* ################# */}
+      <h2 id="cookies" className="text-xl font-semibold mt-24">
+        ARTICLE 8&nbsp;: EXONÉRATION DE RESPONSABILITÉ
+      </h2>
+      <p className="pt-4">
+        Les services proposés par Rao Nagos, tels que Rao Web, Rao Bot et Rao Mail Server, sont fournis &quot;tels quels&quot; sans garantie expresse ou implicite. Bien que nous nous efforçions de
+        fournir des services de qualité, nous ne garantissons pas que les services seront toujours disponibles, exempts d&apos;erreur ou de défauts, ni que les erreurs seront corrigées.
+      </p>
+      <p className="pt-4">
+        En utilisant les services de Rao Nagos - ainsi que ce site web -, vous acceptez que l&apos;utilisation est à vos risques et périls. Nous ne serons pas responsables des dommages directs,
+        indirects, accessoires, spéciaux, punitifs ou consécutifs de toute nature, y compris sans limitation les pertes de fonds, de bénéfices ou de revenus, qui découlent de l&apos;utilisation ou de
+        l&apos;impossibilité d&apos;utiliser les services.
+      </p>
+      <p className="pt-4">
+        Vous acceptez également de défendre, indemniser et de nous dégager de toute responsabilité en cas de réclamation ou de poursuite résultant de l&apos;utilisation de nos services.
+      </p>
+      <p className="pt-4">
+        Cette section de exonération de responsabilité s&apos;applique à toutes les formes d&apos;utilisation des services de Rao Nagos, y compris sans limitation les utilisations par des clients, des
+        utilisateurs finaux, des tiers et des partenaires commerciaux.
+      </p>
+      {/* ################# */}
+      <h2 id="cookies" className="text-xl font-semibold mt-24">
+        ARTICLE 9&nbsp;: PAIEMENT, FACTURATION ET TARIFICATION
+      </h2>
+      <p className="pt-4">
+        <strong>9.1</strong> Les prix sont libelés en franc pacifique&nbsp;: XPF.
+      </p>
+      <p className="pt-4">
+        <strong>9.2</strong> Les prix pour les services proposés par Rao Nagos sont disponibles sur le site web à l&apos;adresse{" "}
+        <Link className="text-blue-500" href="/#prices">
+          https://www.rao-nagos.pf/#prices
+        </Link>
+        . À la livraison du produit final, est appliqué un abonnement mensuel de 7000 (sept mille) XPF. Une intervention est facturée de 20 700 (vingt mille sept cents) XPF par journée.
+      </p>
+      <p className="pt-4">
+        <strong>9.3</strong> Le paiement des services est effectué en trois étapes. 40% (quarante pour cent) du montant total est payé à la signature du contrat, 40% (quarante pour cent) après la
+        livraison du prototype et 20% (vingt pour cent) pour le produit final.
+      </p>
+      <p className="pt-4">
+        <strong>9.4</strong> Tous les paiements doivent être effectués en totalité avant la fin de la livraison. En cas de non-paiement ou de paiement tardif, Rao Nagos se réserve le droit de refuser
+        de fournir les services.
+      </p>
+      <p className="pt-4">
+        <strong>9.5</strong> Les prix peuvent être modifiés à tout moment sans préavis. Les prix en vigueur à la date de signature du contrat sont ceux qui s&apos;appliqueront pour la durée du
+        contrat.
+      </p>
+      <p className="pt-4">
+        <strong>9.6</strong> Le retard de paiement est de 1 (un) mois maximum.
+      </p>
+      <p className="pt-4">
+        <strong>9.7</strong> Les moyens de paiement acceptés sont soit en liquide avec facture ou soit par virement bancaire sans facture.
+      </p>
+      <p className="pt-4">
+        <strong>9.8</strong> S&apos;il y lieu de dépenses externes, par exemple l&apos;achat d&apos;un serveur ou d&apos;un nom de domaine, ces prix seront facturés au demandeur du service et réglés
+        sans délais.
+      </p>
+      {/* ################# */}
+      <h2 id="cookies" className="text-xl font-semibold mt-24">
+        ARTICLE 10&nbsp;: COMPÉTENCE
+      </h2>
+      <p className="pt-4">Toutes contestations qui découlent de ces présents services - ainsi que ce site web - seront tranchées définitivement par un tribunal compétent en Polynésie Française.</p>
     </div>
   )
 }

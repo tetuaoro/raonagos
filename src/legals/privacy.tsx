@@ -157,9 +157,7 @@ export default function Component() {
       {/* ################# */}
       <p className="pt-24 italic">Les prochains articles évoqueront comment les services proposés par l&apos;agence Rao Nagos doivent être considérés.</p>
       {/* ################# */}
-      <h2 id="cookies" className="text-xl font-semibold mt-24">
-        ARTICLE 7&nbsp;: SERVICES
-      </h2>
+      <h2 className="text-xl font-semibold mt-24">ARTICLE 7&nbsp;: SERVICES</h2>
       <p className="pt-4">Rao Nagos propose 3 services&nbsp;:</p>
       <ul className="list-disc pl-8 pt-4">
         <li>Rao web pour la conception de site web&nbsp;;</li>
@@ -168,9 +166,7 @@ export default function Component() {
       </ul>
       <p className="pt-4">Ces services peuvent être vendus en dehors de la Polynésie Française.</p>
       {/* ################# */}
-      <h2 id="cookies" className="text-xl font-semibold mt-24">
-        ARTICLE 8&nbsp;: EXONÉRATION DE RESPONSABILITÉ
-      </h2>
+      <h2 className="text-xl font-semibold mt-24">ARTICLE 8&nbsp;: EXONÉRATION DE RESPONSABILITÉ</h2>
       <p className="pt-4">
         Les services proposés par Rao Nagos, tels que Rao Web, Rao Bot et Rao Mail Server, sont fournis &quot;tels quels&quot; sans garantie expresse ou implicite. Bien que nous nous efforçions de
         fournir des services de qualité, nous ne garantissons pas que les services seront toujours disponibles, exempts d&apos;erreur ou de défauts, ni que les erreurs seront corrigées.
@@ -188,9 +184,7 @@ export default function Component() {
         utilisateurs finaux, des tiers et des partenaires commerciaux.
       </p>
       {/* ################# */}
-      <h2 id="cookies" className="text-xl font-semibold mt-24">
-        ARTICLE 9&nbsp;: PAIEMENT, FACTURATION ET TARIFICATION
-      </h2>
+      <h2 className="text-xl font-semibold mt-24">ARTICLE 9&nbsp;: PAIEMENT, FACTURATION ET TARIFICATION</h2>
       <p className="pt-4">
         <strong>9.1</strong> Les prix sont libelés en franc pacifique&nbsp;: XPF.
       </p>
@@ -224,9 +218,7 @@ export default function Component() {
         sans délais.
       </p>
       {/* ################# */}
-      <h2 id="cookies" className="text-xl font-semibold mt-24">
-        ARTICLE 10&nbsp;: COMPÉTENCE
-      </h2>
+      <h2 className="text-xl font-semibold mt-24">ARTICLE 10&nbsp;: COMPÉTENCE</h2>
       <p className="pt-4">Toutes contestations qui découlent de ces présents services - ainsi que ce site web - seront tranchées définitivement par un tribunal compétent en Polynésie Française.</p>
     </div>
   )

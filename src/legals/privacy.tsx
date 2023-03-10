@@ -89,7 +89,7 @@ export default function Component() {
         <strong>A. </strong>LE RESPONSABLE DU TRAITEMENT DES DONNÉES
       </p>
       <p className="pt-4">
-        Le responsable du traitement des données à caractère personnel est&nbsp;: Tetuaoro Lenoir. Il peut être contacté de la manière suivante&nbsp;:{" "}
+        Le responsable du traitement des données à caractère personnel est&nbsp;: Il peut être contacté de la manière suivante&nbsp;:{" "}
         <a className="text-blue-500" href="mailto:contact@rao-nagos.pf?subject=privacy">
           contact@rao-nagos.pf
         </a>

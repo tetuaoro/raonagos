@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Script from "next/script"
 import { useEffect, useState } from "react"
 import { siteurl, sitename, fbAppId, description } from "@libs/app"
 import Organization from "@libs/schema"
@@ -55,7 +56,7 @@ const Page: NextPage = () => {
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="727" />
         <meta property="og:image:type" content="image/webp" />
-        <script key={"structured-data"} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(Organization) }} />
+        <script key="structured-data" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(Organization) }} />
       </Head>
       <Whoweare />
       <Whatwedo />
@@ -67,6 +68,12 @@ const Page: NextPage = () => {
           {"En poursuivant votre navigation, vous acceptez les conditions d'utilisation."}
         </CookieConsent>
       )}
+      <Script
+        key="simpleanalytics"
+        src="https://scripts.simpleanalyticscdn.com/latest.js"
+        onError={(error) => console.error("load simpleanalitics failed", error)}
+        onLoad={(message) => console.log("load simpleanalitics success", message)}
+      />
     </>
   )
 }

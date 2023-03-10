@@ -70,7 +70,7 @@ const Page: NextPage = () => {
       )}
       <Script
         key="simpleanalytics"
-        src="https://scripts.simpleanalyticscdn.com/latest.js"
+        src="https://sa.rao-nagos.pf/latest.js"
         onError={(error) => console.error("load simpleanalitics failed", error)}
         onLoad={(message) => console.log("load simpleanalitics success", message)}
       />

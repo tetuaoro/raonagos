@@ -68,12 +68,7 @@ const Page: NextPage = () => {
           {"En poursuivant votre navigation, vous acceptez les conditions d'utilisation."}
         </CookieConsent>
       )}
-      <Script
-        key="simpleanalytics"
-        src="https://sa.rao-nagos.pf/latest.js"
-        onError={(error) => console.error("load simpleanalitics failed", error)}
-        onLoad={(message) => console.log("load simpleanalitics success", message)}
-      />
+      <Script key="simpleanalytics" src="https://sa.rao-nagos.pf/latest.js" />
     </>
   )
 }

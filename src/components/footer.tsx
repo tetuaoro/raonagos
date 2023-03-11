@@ -1,4 +1,4 @@
-import { sitename, fbAppId, telephone } from "@libs/app"
+import { sitename, fbPageId, telephone } from "@libs/app"
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/router"
@@ -7,7 +7,7 @@ export default function Footer() {
   const [facebookUrl, setFbURL] = useState(`https://www.facebook.com/raonagos`)
 
   useEffect(() => {
-    if (navigator.userAgent.match("Android|iPhone|iPad")) setFbURL(`fb://profile/${fbAppId}`)
+    if (navigator.userAgent.match("Android|iPhone|iPad")) setFbURL(`fb://profile/${fbPageId}`)
   }, [])
 
   const { pathname } = useRouter()

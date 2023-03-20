@@ -5,7 +5,9 @@ import w2 from "@images/w-2.webp"
 import w4 from "@images/w-4.webp"
 import { sitename } from "@libs/app"
 
-export default function Component() {
+import type { FC } from "react"
+
+const Component: FC = () => {
   return (
     <section id="whatwedo" className="relative z-10 bg-black text-white full-bleed p-3 md:p-6 py-12">
       <div className="flex flex-col items-center lg:block mb-4">
@@ -92,3 +94,5 @@ export default function Component() {
     </section>
   )
 }
+
+export default Component

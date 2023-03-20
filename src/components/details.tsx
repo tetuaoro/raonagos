@@ -1,4 +1,6 @@
-export default function Component() {
+import type { FC } from "react"
+
+const Component: FC = () => {
   return (
     <section id="details">
       <div className="py-8 lg:py-16 grid grid-cols-1 lg:grid-cols-3 gap-y-12 full-bleed bg-black text-white text-center">
@@ -18,3 +20,5 @@ export default function Component() {
     </section>
   )
 }
+
+export default Component

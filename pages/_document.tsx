@@ -1,6 +1,8 @@
 import { Html, Head, Main, NextScript } from "next/document"
 
-export default function Document() {
+import type { CSSProperties } from "react"
+
+const Document = () => {
   return (
     <Html lang="fr">
       <Head>
@@ -14,8 +16,28 @@ export default function Document() {
       </Head>
       <body>
         <Main />
+        <BlurBottomPage />
         <NextScript />
       </body>
     </Html>
   )
 }
+
+const BlurBottomPage = () => {
+  const style: CSSProperties = {
+    width: "100%",
+    height: "4%",
+    position: "fixed",
+    bottom: 0,
+    zIndex: 998,
+    backdropFilter: "blur(1px)"
+  }
+
+  return (
+    <>
+      <div style={style}></div>
+    </>
+  )
+}
+
+export default Document

@@ -7,7 +7,7 @@ import { useRouter } from "next/router"
 
 import type { AppProps } from "next/app"
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   const { pathname } = useRouter()
   const match = pathname.match(/^(\/terms|\/privacy)$/)
 
@@ -22,3 +22,5 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     </ParallaxProvider>
   )
 }
+
+export default App

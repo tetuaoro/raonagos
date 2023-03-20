@@ -1,9 +1,9 @@
 import { useState } from "react"
 import { sitename } from "@libs/app"
 
-import type { FormEventHandler } from "react"
+import type { FormEventHandler, FC } from "react"
 
-export default function Component() {
+const Component: FC = () => {
   const [error, setError] = useState("")
   const onSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
     try {
@@ -61,3 +61,5 @@ export default function Component() {
     </section>
   )
 }
+
+export default Component

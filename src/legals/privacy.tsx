@@ -1,7 +1,9 @@
 import { siteurl } from "@libs/app"
 import Link from "next/link"
 
-export default function Component() {
+import type { FC } from "react"
+
+const Component: FC = () => {
   return (
     <div className="mx-8 md:mx-32 lg:mx-64 ">
       <h1 className="text-4xl">Politiques de confidentialité</h1>
@@ -89,7 +91,7 @@ export default function Component() {
         <strong>A. </strong>LE RESPONSABLE DU TRAITEMENT DES DONNÉES
       </p>
       <p className="pt-4">
-        Le responsable du traitement des données à caractère personnel est&nbsp;: Il peut être contacté de la manière suivante&nbsp;:{" "}
+        Le responsable du traitement des données à caractère personnel peut être contacté de la manière suivante&nbsp;:{" "}
         <a className="text-blue-500" href="mailto:contact@rao-nagos.pf?subject=privacy">
           contact@rao-nagos.pf
         </a>
@@ -223,3 +225,5 @@ export default function Component() {
     </div>
   )
 }
+
+export default Component

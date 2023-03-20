@@ -1,5 +1,6 @@
 import { sitename } from "@libs/app"
-import type { CSSProperties } from "react"
+
+import type { CSSProperties, FC } from "react"
 
 const Caption = () => {
   const styles: CSSProperties = { captionSide: "bottom", textAlign: "left" }
@@ -32,7 +33,7 @@ const Thead = () => {
   )
 }
 
-export default function Component() {
+const Component: FC = () => {
   return (
     <section id="prices">
       <div className="flex justify-center lg:justify-end">
@@ -61,8 +62,8 @@ export default function Component() {
           une mission ponctuelle ou un accompagnement sur le long terme.
         </p>
         <p className="mt-4">
-          N&apos;hésitez pas à nous contacter pour discuter de votre projet et obtenir un devis personnalisé. Nous sommes là pour vous aider à tirer le meilleur parti des outils numériques, tout en vous
-          garantissant un service de qualité.
+          N&apos;hésitez pas à nous contacter pour discuter de votre projet et obtenir un devis personnalisé. Nous sommes là pour vous aider à tirer le meilleur parti des outils numériques, tout en
+          vous garantissant un service de qualité.
         </p>
       </div>
     </section>
@@ -327,3 +328,5 @@ const Tr = () => {
     </>
   )
 }
+
+export default Component

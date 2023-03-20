@@ -3,7 +3,9 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/router"
 
-export default function Footer() {
+import type { FC } from "react"
+
+const Footer: FC = () => {
   const [facebookUrl, setFbURL] = useState(`https://www.facebook.com/raonagos`)
 
   useEffect(() => {
@@ -83,3 +85,5 @@ export default function Footer() {
     </footer>
   )
 }
+
+export default Footer

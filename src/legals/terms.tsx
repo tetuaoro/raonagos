@@ -1,7 +1,9 @@
 import { rcs, telephone } from "@libs/app"
 import Link from "next/link"
 
-export default function Component() {
+import type { FC } from "react"
+
+const Component: FC = () => {
   return (
     <div className="mx-8 md:mx-32 lg:mx-64 ">
       <h1 className="text-4xl">MENTIONS LÉGALES</h1>
@@ -59,3 +61,5 @@ export default function Component() {
     </div>
   )
 }
+
+export default Component

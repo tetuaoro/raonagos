@@ -5,9 +5,9 @@ import { sitename } from "@libs/app"
 
 import hero from "@images/hero_bg.webp"
 
-import type { MouseEventHandler, CSSProperties } from "react"
+import type { MouseEventHandler, CSSProperties, FC } from "react"
 
-export default function Header() {
+const Header: FC = () => {
   const [menuToggle, setMenuToggle] = useState(false)
   const { ref } = useParallax<HTMLDivElement>({
     speed: -100,
@@ -64,3 +64,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header

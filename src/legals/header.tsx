@@ -1,7 +1,9 @@
 import { sitename } from "@libs/app"
 import Link from "next/link"
 
-export default function Header() {
+import type { FC } from "react"
+
+const Header: FC = () => {
   return (
     <header className="poppins">
       <div className="p-12">
@@ -12,3 +14,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header

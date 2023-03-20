@@ -1,6 +1,8 @@
 import { sitename } from "@libs/app"
 
-export default function Component() {
+import type { FC } from "react"
+
+const Component: FC = () => {
   return (
     <section id="whoweare" className="relative z-10 bg-white p-3 py-12">
       <div className="presentation">
@@ -54,3 +56,5 @@ export default function Component() {
     </section>
   )
 }
+
+export default Component

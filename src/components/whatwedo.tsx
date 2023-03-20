@@ -61,7 +61,7 @@ const Component: FC = () => {
         </div>
       </div>
       <div className="cards">
-        <div className="card">
+        <div id="rao-web" className="card">
           <span className="card-title">Rao web</span>
           <span className="card-indication">
             <i className="gray">40 000 XPF</i>
@@ -70,7 +70,7 @@ const Component: FC = () => {
             {`Notre agence ${sitename}  est ton alliée dans la création d'application pour le web. Quel que soit ton type d'application, à usage professionnel ou personnel, nous disposons des outils nécessaires pour répondre à tes attentes. Et ce, dès la phase de conception jusqu'à sa finalisation. Tous nos sites sont consultables hors ligne et peuvent être installés sur ton ordinateur ou ton smartphone.`}
           </p>
         </div>
-        <div className="card">
+        <div id="rao-bot" className="card">
           <span className="card-title">Rao bot</span>
           <span className="card-indication">
             <i className="gray">150 000 XPF</i>
@@ -79,7 +79,7 @@ const Component: FC = () => {
             {`Rao bot est un service avec lequel tu peux automatiser tes actions et rentabiliser ton temps. Par exemple depuis 2016, nous sommes au service des professionnels et des particuliers qui veulent tirer parti du marché des cryptomonnaies. Nous disposons de compétences en matière de trading automatique, d'envoie de message électronique programmé ou d'optimisation d'espace disque des serveurs.`}
           </p>
         </div>
-        <div className="card">
+        <div id="rao-mail-server" className="card">
           <span className="card-title">Rao mail server</span>
           <span className="card-indication">
             <i className="gray">150 000 XPF</i>

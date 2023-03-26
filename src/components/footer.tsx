@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 
 import type { FC } from "react"
+import BlurBottom from "./blurBottom"
 
 const Footer: FC = () => {
   const [facebookUrl, setFbURL] = useState(`https://www.facebook.com/raonagos`)
@@ -16,7 +17,7 @@ const Footer: FC = () => {
   const match = pathname.match(/^(\/terms|\/privacy)$/)
 
   return (
-    <footer className={`full-bleed ${match ? "bg-gray-200" : "bg-primary-100 text-white"} py-4 lg:py-12 px-4 lg:px-20`}>
+    <footer className={`full-bleed ${match ? "bg-gray-200" : "bg-primary-100 text-white"} py-12 px-4 lg:px-20`}>
       <div className="flex flex-col justify-evenly lg:flex-row gap-y-8">
         <div>
           <div className="flex flex-col gap-y-2">

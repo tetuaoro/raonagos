@@ -1,8 +1,10 @@
 import Head from "next/head"
 import Script from "next/script"
+import Image from "next/image"
 import { useEffect, useState } from "react"
 import { siteurl, sitename, fbAppId, description } from "@libs/app"
 import Organization from "@libs/schema"
+import BlurBottom from "@components/blurBottom"
 import Whoweare from "@components/whoweare"
 import Whatwedo from "@components/whatwedo"
 import Prices from "@components/prices"
@@ -63,12 +65,16 @@ const Page: NextPage = () => {
       <Prices />
       <Details />
       <ContactForm />
+      <BlurBottom />
       {showCookies && (
         <CookieConsent expires={90} cookieName="rao_nagos_acceptcgu" buttonText="Bien sûr" buttonStyle={{ color: "white", backgroundColor: "#00abf3", borderRadius: "15px" }}>
           {"En poursuivant votre navigation, vous acceptez les conditions d'utilisation."}
         </CookieConsent>
       )}
-      <Script key="simpleanalytics" src="https://sa.rao-nagos.pf/latest.js" />
+      <Script id="shynet" src="https://analytics.rao-nagos.pf/ingress/7c202c1e-7850-4318-bb57-0e91fe6d6da4/script.js" />
+      <noscript>
+        <Image src="https://analytics.rao-nagos.pf/ingress/7c202c1e-7850-4318-bb57-0e91fe6d6da4/pixel.gif" alt="analytics pixel for rao nagos" width={1} height={1} />
+      </noscript>
     </>
   )
 }

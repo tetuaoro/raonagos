@@ -5,6 +5,12 @@
  * trusted by all browsers.
  * 
  * Here how to use : https://web.dev/how-to-use-local-https/
+ * 
+ * ```bash
+ * mkcert localhost
+ * # or
+ * mkcert myhome.com
+ * ```
  *
  * */
 

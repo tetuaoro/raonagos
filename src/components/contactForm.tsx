@@ -42,6 +42,7 @@ const Component: FC = () => {
             <option value="raoweb">Rao web</option>
             <option value="raobot">Rao bot</option>
             <option value="raomail">Rao mail</option>
+            <option value="raomail">Rao mission</option>
             <option value="information">Information</option>
             <option value="others">Autres</option>
           </select>

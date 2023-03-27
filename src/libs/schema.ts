@@ -60,11 +60,11 @@ const hasOfferCatalog: OfferCatalog = {
     },
     {
       "@type": "Offer",
-      name: "Intervention & mission",
+      name: "Rao mission",
       description:
         "Engagez notre équipe pour le développement d'applications personnalisées et d'autres projets. Nous travaillons avec vous pour créer des solutions sur mesure qui répondent aux besoins de votre entreprise et vous aident à atteindre vos objectifs.",
       url: `${siteurl}/#mission`,
-      price: 20000.0,
+      price: 20700.0,
       priceCurrency: "XPF",
     },
   ],

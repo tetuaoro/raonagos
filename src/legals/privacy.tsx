@@ -55,7 +55,7 @@ const Component: FC = () => {
         immédiatement.
       </p>
       <p className="pt-4">
-        <strong>A. </strong>DONNÉES TRAITÉES ET MODE DE COLLECTE
+        <strong>A. </strong>DONNÉES PERSONNELLES TRAITÉES ET MODE DE COLLECTE
       </p>
       <p className="pt-4">Les données à caractère personnel traitées sur le site sont les suivantes&nbsp;:</p>
       <ul className="list-disc pl-8 pt-4">
@@ -72,11 +72,25 @@ const Component: FC = () => {
         <li>communiquer.</li>
       </ul>
       <p className="pt-4">
-        <strong>B. </strong>TRANSMISSION DES DONNÉES A DES TIERS
+        <strong>B. </strong>DONNÉES GÉNÉRALES TRAITÉES ET MODE DE COLLECTE
       </p>
-      <p className="pt-4">Les données à caractère personnel collectées par le site ne sont transmises à aucun tiers, et ne sont traitées que par l&apos;éditeur du site.</p>
+      <p className="pt-4">Les données à caractère non personnel peuvent être collectées et traitées à des fins statistiques. Ces données comprennent notamment &nbsp;:</p>
+
+      <ul className="list-disc pl-8 pt-4">
+        <li>les pages visitées&nbsp;;</li>
+        <li>la durée de la visite&nbsp;;</li>
+        <li>le type de navigateur&nbsp;;</li>
+        <li>l&apos;appareil utilisé&nbsp;;</li>
+        <li>le système d&apos;exploitation&nbsp;;</li>
+        <li>la provenance géographique de l&apos;utilisateur.</li>
+      </ul>
+      <p className="pt-4">Ces données sont collectées à l&apos;aide d&apos;un script d&apos;analyse de trafic web. Aucune donnée sensible n&apos;est collectée dans ce cadre.</p>
       <p className="pt-4">
-        <strong>C. </strong>HÉBERGEMENT DES DONNÉES
+        <strong>C. </strong>TRANSMISSION DES DONNÉES A DES TIERS
+      </p>
+      <p className="pt-4">Toutes les données collectées par le site ne sont transmises à aucun tiers, et ne sont traitées que par l&apos;éditeur du site.</p>
+      <p className="pt-4">
+        <strong>D. </strong>HÉBERGEMENT DES DONNÉES
       </p>
       <p className="pt-4">
         Le site {siteurl} est hébergé par&nbsp;:{" "}
@@ -84,6 +98,13 @@ const Component: FC = () => {
           Vercel.com
         </a>
         , dont le siège est situé à l&apos;adresse ci-après&nbsp;: San Francisco & Global.
+      </p>
+      <p className="pt-4">
+        Les données collectées sont hébergées sur nos propres serveurs dont le fournisseur respecte aussi les normes RGPD&nbsp;:{" "}
+        <a className="text-blue-500" href="https://ionos.fr" target="_blank" rel="noreferrer">
+          Ionos.fr
+        </a>
+        .
       </p>
       {/* ####### */}
       <h2 className="text-xl font-semibold mt-24">ARTICLE 3&nbsp;: RESPONSABLE DU TRAITEMENT DES DONNÉES</h2>
@@ -157,21 +178,25 @@ const Component: FC = () => {
         mille vingt-trois).
       </p>
       {/* ################# */}
-      <p className="pt-24 italic">Les prochains articles évoqueront comment les services proposés par l&apos;agence Rao Nagos doivent être considérés.</p>
+      <p className="pt-24 italic">
+        Les prochains articles évoqueront comment les services proposés par l&apos;agence Rao Nagos doivent être considérés. Ils ont pour but d&apos;informer en amont les utilisateurs désireux de
+        contracter avec l&apos;agence et leur offrir un aperçu de ceux qui les attend.
+      </p>
       {/* ################# */}
       <h2 className="text-xl font-semibold mt-24">ARTICLE 7&nbsp;: SERVICES</h2>
-      <p className="pt-4">Rao Nagos propose 3 services&nbsp;:</p>
+      <p className="pt-4">Rao Nagos propose 4 services&nbsp;:</p>
       <ul className="list-disc pl-8 pt-4">
         <li>Rao web pour la conception de site web&nbsp;;</li>
         <li>Rao bot pour l&apos;automatisation de tâche répétitive&nbsp;;</li>
-        <li>Rao mail server pour l&apos;installation d&apos;une messagerie électronique.</li>
+        <li>Rao mail server pour l&apos;installation d&apos;une messagerie électronique&nbsp;;</li>
+        <li>Rao mission, un moyen ponctuel de missionner nos services.</li>
       </ul>
       <p className="pt-4">Ces services peuvent être vendus en dehors de la Polynésie Française.</p>
       {/* ################# */}
       <h2 className="text-xl font-semibold mt-24">ARTICLE 8&nbsp;: EXONÉRATION DE RESPONSABILITÉ</h2>
       <p className="pt-4">
-        Les services proposés par Rao Nagos, tels que Rao Web, Rao Bot et Rao Mail Server, sont fournis &quot;tels quels&quot; sans garantie expresse ou implicite. Bien que nous nous efforçions de
-        fournir des services de qualité, nous ne garantissons pas que les services seront toujours disponibles, exempts d&apos;erreur ou de défauts, ni que les erreurs seront corrigées.
+        Les services proposés par Rao Nagos, tels que Rao Web, Rao Bot, Rao Mail Server et Rao mission sont fournis &quot;tels quels&quot; sans garantie expresse ou implicite. Bien que nous nous
+        efforçions de fournir des services de qualité, nous ne garantissons pas que les services seront toujours disponibles, exempts d&apos;erreur ou de défauts, ni que les erreurs seront corrigées.
       </p>
       <p className="pt-4">
         En utilisant les services de Rao Nagos - ainsi que ce site web -, vous acceptez que l&apos;utilisation est à vos risques et périls. Nous ne serons pas responsables des dommages directs,
@@ -195,7 +220,7 @@ const Component: FC = () => {
         <Link className="text-blue-500" href="/#prices">
           https://www.rao-nagos.pf/#prices
         </Link>
-        . À la livraison du produit final, est appliqué un abonnement mensuel de 7000 (sept mille) XPF. Une intervention est facturée de 20 700 (vingt mille sept cents) XPF par journée.
+        . À la livraison du produit final, est appliqué un abonnement mensuel de 7000 (sept mille) XPF (sauf pour Rao mission). Une intervention est facturée à 20 700 (vingt mille sept cents) XPF par journée.
       </p>
       <p className="pt-4">
         <strong>9.3</strong> Le paiement des services est effectué en trois étapes. 40% (quarante pour cent) du montant total est payé à la signature du contrat, 40% (quarante pour cent) après la

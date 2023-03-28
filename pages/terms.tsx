@@ -11,6 +11,10 @@ const Page: NextPage = () => {
     <>
       <Head>
         <title>{title}</title>
+        <meta
+          name="description"
+          content="Les termes de Rao Nagos détaillent les règles applicables à l'utilisation des services proposés par l'agence, ainsi que les droits et responsabilités de chaque partie."
+        />
       </Head>
       <Terms />
     </>

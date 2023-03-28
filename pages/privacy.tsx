@@ -11,6 +11,10 @@ const Page: NextPage = () => {
     <>
       <Head>
         <title>{title}</title>
+        <meta
+          name="description"
+          content="La page de politique de confidentialité de Rao Nagos explique comment l'agence traite les données personnelles de ses utilisateurs et visiteurs, ainsi que les droits de chacun concernant ces données."
+        />
       </Head>
       <Privacy />
     </>

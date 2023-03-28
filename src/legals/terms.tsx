@@ -44,7 +44,7 @@ const Component: FC = () => {
       <p className="pt-4">
         Plus d&apos;informations sur le traitement de vos données sont disponibles à cette adresse&nbsp;:{" "}
         <Link href="/privacy#data" className="text-blue-500">
-          ici
+          mes données
         </Link>
         .
       </p>
@@ -54,7 +54,7 @@ const Component: FC = () => {
       <p className="pt-4">
         Plus d&apos;informations sur le fonctionnement et la procédure à suivre pour gérer les cookies sont disponibles à cette adresse&nbsp;:{" "}
         <Link className="text-blue-500" href="/privacy#cookies">
-          ici
+          mes cookies
         </Link>
         .
       </p>

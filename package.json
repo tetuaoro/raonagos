@@ -1,7 +1,32 @@
 {
   "name": "raonagos",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "private": true,
+  "description": "Agence numérique spécialisée dans la création de sites web personnalisés, de robots automatisés uniques et de serveurs de messagerie performants",
+  "keywords": [
+    "agence",
+    "numérique",
+    "création",
+    "sites web",
+    "robots automatisés",
+    "serveurs de messagerie",
+    "expérience utilisateur",
+    "design",
+    "fonctionnalités riches"
+  ],
+  "engines": {
+    "node": ">=18.15.0"
+  },
+  "author": "tetuaoro",
+  "license": "private",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tetuaoro/raonagos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tetuaoro/raonagos/issues"
+  },
+  "homepage": "https://www.rao-nagos.pf",
   "scripts": {
     "dev": "node server/server.mjs",
     "build": "next build",

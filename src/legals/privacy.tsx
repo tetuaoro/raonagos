@@ -1,4 +1,5 @@
 import { siteurl } from "@libs/app"
+import Head from "next/head"
 import Link from "next/link"
 
 import type { FC } from "react"
@@ -55,7 +56,7 @@ const Component: FC = () => {
         immédiatement.
       </p>
       <p className="pt-4">
-        <strong>A. </strong>DONNÉES PERSONNELLES TRAITÉES ET MODE DE COLLECTE
+        <strong>2.A </strong>DONNÉES PERSONNELLES TRAITÉES ET MODE DE COLLECTE
       </p>
       <p className="pt-4">Les données à caractère personnel traitées sur le site sont les suivantes&nbsp;:</p>
       <ul className="list-disc pl-8 pt-4">
@@ -72,7 +73,7 @@ const Component: FC = () => {
         <li>communiquer.</li>
       </ul>
       <p className="pt-4">
-        <strong>B. </strong>DONNÉES GÉNÉRALES TRAITÉES ET MODE DE COLLECTE
+        <strong>2.B </strong>DONNÉES GÉNÉRALES TRAITÉES ET MODE DE COLLECTE
       </p>
       <p className="pt-4">Les données à caractère non personnel peuvent être collectées et traitées à des fins statistiques. Ces données comprennent notamment &nbsp;:</p>
 
@@ -86,11 +87,11 @@ const Component: FC = () => {
       </ul>
       <p className="pt-4">Ces données sont collectées à l&apos;aide d&apos;un script d&apos;analyse de trafic web. Aucune donnée sensible n&apos;est collectée dans ce cadre.</p>
       <p className="pt-4">
-        <strong>C. </strong>TRANSMISSION DES DONNÉES A DES TIERS
+        <strong>2.C </strong>TRANSMISSION DES DONNÉES A DES TIERS
       </p>
       <p className="pt-4">Toutes les données collectées par le site ne sont transmises à aucun tiers, et ne sont traitées que par l&apos;éditeur du site.</p>
       <p className="pt-4">
-        <strong>D. </strong>HÉBERGEMENT DES DONNÉES
+        <strong>2.D </strong>HÉBERGEMENT DES DONNÉES
       </p>
       <p className="pt-4">
         Le site {siteurl} est hébergé par&nbsp;:{" "}
@@ -109,7 +110,7 @@ const Component: FC = () => {
       {/* ####### */}
       <h2 className="text-xl font-semibold mt-24">ARTICLE 3&nbsp;: RESPONSABLE DU TRAITEMENT DES DONNÉES</h2>
       <p className="pt-4">
-        <strong>A. </strong>LE RESPONSABLE DU TRAITEMENT DES DONNÉES
+        <strong>3.A </strong>LE RESPONSABLE DU TRAITEMENT DES DONNÉES
       </p>
       <p className="pt-4">
         Le responsable du traitement des données à caractère personnel peut être contacté de la manière suivante&nbsp;:{" "}
@@ -120,7 +121,7 @@ const Component: FC = () => {
       </p>
       <p className="pt-4">Le responsable du traitement des données est chargé de déterminer les finalités et les moyens mis au service du traitement des données à caractère personnel.</p>
       <p className="pt-4">
-        <strong>B. </strong>OBLIGATIONS DU RESPONSABLE DU TRAITEMENT DES DONNÉES
+        <strong>3.B </strong>OBLIGATIONS DU RESPONSABLE DU TRAITEMENT DES DONNÉES
       </p>
       <p className="pt-4">
         Le responsable du traitement s&apos;engage à protéger les données à caractère personnel collectées, à ne pas les transmettre à des tiers sans que l&apos;utilisateur n&apos;en ait été informé
@@ -143,7 +144,7 @@ const Component: FC = () => {
       </p>
       <p className="pt-4">Le responsable du traitement des données est tenu de répondre à l&apos;utilisateur dans un délai de 30 (trente) jours maximum.</p>
       <p className="pt-4">
-        <strong>A.</strong> PRÉSENTATION DES DROITS DE L&apos;UTILISATEUR EN MATIÈRE DE COLLECTE ET TRAITEMENT DE DONNÉES
+        <strong>4.A </strong>PRÉSENTATION DES DROITS DE L&apos;UTILISATEUR EN MATIÈRE DE COLLECTE ET TRAITEMENT DE DONNÉES
       </p>
       <p className="pt-4 pl-8">
         <em>a. Droit d&apos;accès, de rectification et droit à l&apos;effacement</em>
@@ -213,35 +214,36 @@ const Component: FC = () => {
       {/* ################# */}
       <h2 className="text-xl font-semibold mt-24">ARTICLE 9&nbsp;: PAIEMENT, FACTURATION ET TARIFICATION</h2>
       <p className="pt-4">
-        <strong>9.1</strong> Les prix sont libelés en franc pacifique&nbsp;: XPF.
+        <strong>9.A</strong> Les prix sont libelés en franc pacifique&nbsp;: XPF.
       </p>
       <p className="pt-4">
-        <strong>9.2</strong> Les prix pour les services proposés par Rao Nagos sont disponibles sur le site web à l&apos;adresse{" "}
+        <strong>9.B</strong> Les prix pour les services proposés par Rao Nagos sont disponibles sur le site web à l&apos;adresse{" "}
         <Link className="text-blue-500" href="/#prices">
           https://www.rao-nagos.pf/#prices
         </Link>
-        . À la livraison du produit final, est appliqué un abonnement mensuel de 7000 (sept mille) XPF (sauf pour Rao mission). Une intervention est facturée à 20 700 (vingt mille sept cents) XPF par journée.
+        . À la livraison du produit final, est appliqué un abonnement mensuel de 7000 (sept mille) XPF (sauf pour Rao mission). Une intervention est facturée à 20 700 (vingt mille sept cents) XPF par
+        journée.
       </p>
       <p className="pt-4">
-        <strong>9.3</strong> Le paiement des services est effectué en trois étapes. 40% (quarante pour cent) du montant total est payé à la signature du contrat, 40% (quarante pour cent) après la
+        <strong>9.C</strong> Le paiement des services est effectué en trois étapes. 40% (quarante pour cent) du montant total est payé à la signature du contrat, 40% (quarante pour cent) après la
         livraison du prototype et 20% (vingt pour cent) pour le produit final.
       </p>
       <p className="pt-4">
-        <strong>9.4</strong> Tous les paiements doivent être effectués en totalité avant la fin de la livraison. En cas de non-paiement ou de paiement tardif, Rao Nagos se réserve le droit de refuser
+        <strong>9.D</strong> Tous les paiements doivent être effectués en totalité avant la fin de la livraison. En cas de non-paiement ou de paiement tardif, Rao Nagos se réserve le droit de refuser
         de fournir les services.
       </p>
       <p className="pt-4">
-        <strong>9.5</strong> Les prix peuvent être modifiés à tout moment sans préavis. Les prix en vigueur à la date de signature du contrat sont ceux qui s&apos;appliqueront pour la durée du
+        <strong>9.E</strong> Les prix peuvent être modifiés à tout moment sans préavis. Les prix en vigueur à la date de signature du contrat sont ceux qui s&apos;appliqueront pour la durée du
         contrat.
       </p>
       <p className="pt-4">
-        <strong>9.6</strong> Le retard de paiement est de 1 (un) mois maximum.
+        <strong>9.F</strong> Le retard de paiement est de 1 (un) mois maximum.
       </p>
       <p className="pt-4">
-        <strong>9.7</strong> Les moyens de paiement acceptés sont soit en liquide avec facture ou soit par virement bancaire sans facture.
+        <strong>9.G</strong> Les moyens de paiement acceptés sont soit en liquide avec facture ou soit par virement bancaire sans facture.
       </p>
       <p className="pt-4">
-        <strong>9.8</strong> S&apos;il y a lieu de dépenses autres, par exemple l&apos;achat d&apos;un serveur ou d&apos;un nom de domaine, elles seront facturées au demandeur du service et réglées
+        <strong>9.H</strong> S&apos;il y a lieu de dépenses autres, par exemple l&apos;achat d&apos;un serveur ou d&apos;un nom de domaine, elles seront facturées au demandeur du service et réglées
         sans délais.
       </p>
       {/* ################# */}

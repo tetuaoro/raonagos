@@ -13,8 +13,9 @@ import ContactForm from "@components/contactForm"
 import CookieConsent from "react-cookie-consent"
 
 import type { NextPage } from "next"
+import Link from "next/link"
 
-const title = `${sitename} - Créateur de site web, d'automatisation de tâche et de serveur de messagerie`
+const title = `${sitename} - Agence web et d'automatisation de tâches`
 
 const Page: NextPage = () => {
   const [showCookies, setShowCookies] = useState(false)
@@ -66,11 +67,21 @@ const Page: NextPage = () => {
       <Details />
       <ContactForm />
       <BlurBottom />
-      {showCookies && (
-        <CookieConsent expires={90} cookieName="rao_nagos_acceptcgu" buttonText="Bien sûr" buttonStyle={{ color: "white", backgroundColor: "#00abf3", borderRadius: "15px" }}>
-          {"En poursuivant votre navigation, vous acceptez les conditions d'utilisation."}
-        </CookieConsent>
-      )}
+      <CookieConsent
+        visible={showCookies ? "byCookieValue" : "hidden"}
+        expires={90}
+        acceptOnScroll={true}
+        acceptOnScrollPercentage={25}
+        cookieName="rao_nagos_acceptcgu"
+        buttonText="Bien sûr"
+        buttonStyle={{ color: "white", backgroundColor: "#00abf3", borderRadius: "15px" }}
+      >
+        En poursuivant votre navigation, vous acceptez{" "}
+        <Link href="/privacy" className="text-primary-100">
+          les conditions d&apos;utilisation
+        </Link>
+        .
+      </CookieConsent>
       <Script id="shynet" src="https://analytics.rao-nagos.pf/ingress/7c202c1e-7850-4318-bb57-0e91fe6d6da4/script.js" />
       <noscript>
         <Image src="https://analytics.rao-nagos.pf/ingress/7c202c1e-7850-4318-bb57-0e91fe6d6da4/pixel.gif" alt="analytics pixel for rao nagos" width={1} height={1} />

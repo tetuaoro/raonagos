@@ -2,37 +2,6 @@ import { sitename } from "@libs/app"
 
 import type { CSSProperties, FC } from "react"
 
-const Caption = () => {
-  const styles: CSSProperties = { captionSide: "bottom", textAlign: "left" }
-  return (
-    <caption style={styles}>
-      <small>
-        {"Toute intervention après livraison est facturée, à la journée, de 20 700 XPF ainsi qu'une mensualité de 7000 XPF."}
-        <br />
-        <span className="flex items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-          </svg>
-          <span className="ml-2">en option</span>
-        </span>
-      </small>
-    </caption>
-  )
-}
-
-const Thead = () => {
-  return (
-    <thead>
-      <tr className="transition-0">
-        <th></th>
-        <th>Particulier</th>
-        <th>Profesionnel</th>
-        <th>Entreprise</th>
-      </tr>
-    </thead>
-  )
-}
-
 const Component: FC = () => {
   return (
     <section id="prices">
@@ -58,8 +27,8 @@ const Component: FC = () => {
           Vous rencontrez un problème technique avec votre site web ou votre serveur de messagerie ? Engager {sitename}.
         </p>
         <p className="mt-4">
-          Nous vous proposons des solutions adaptées à vos besoins, dans un délai rapide et à un coût raisonnable de 20 700 XPF par journée sans mensualité. Nous sommes à votre disposition pour répondre à toutes vos demandes, que ce soit pour
-          une mission ponctuelle ou un accompagnement sur le long terme.
+          Nous vous proposons des solutions adaptées à vos besoins, dans un délai rapide et à un coût raisonnable de 20 700 XPF par journée sans mensualité. Nous sommes à votre disposition pour
+          répondre à toutes vos demandes, que ce soit pour une mission ponctuelle ou un accompagnement sur le long terme.
         </p>
         <p className="mt-4">
           N&apos;hésitez pas à nous contacter pour discuter de votre projet et obtenir un devis personnalisé. Nous sommes là pour vous aider à tirer le meilleur parti des outils numériques, tout en
@@ -70,9 +39,9 @@ const Component: FC = () => {
   )
 }
 
-const Tbody = () => {
+const Raoweb = () => {
   return (
-    <tbody>
+    <>
       <tr className="transition-0">
         <td className="service th flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-globe" viewBox="0 0 16 16">
@@ -182,6 +151,13 @@ const Tbody = () => {
         <td>{"2 semaines"}</td>
       </tr>
       <Tr />
+    </>
+  )
+}
+
+const Raobot = () => {
+  return (
+    <>
       <tr className="transition-0">
         <td className="service th flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-gpu-card" viewBox="0 0 16 16">
@@ -245,6 +221,13 @@ const Tbody = () => {
         <td>{"3-6 mois"}</td>
       </tr>
       <Tr />
+    </>
+  )
+}
+
+const Raomail = () => {
+  return (
+    <>
       <tr className="transition-0">
         <td className="service th flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-server" viewBox="0 0 16 16">
@@ -309,6 +292,47 @@ const Tbody = () => {
         </td>
         <td>{"1 journée"}</td>
       </tr>
+    </>
+  )
+}
+
+const Caption = () => {
+  const styles: CSSProperties = { captionSide: "bottom", textAlign: "left" }
+  return (
+    <caption style={styles}>
+      <small>
+        {"Toute intervention après livraison est facturée, à la journée, de 20 700 XPF ainsi qu'une mensualité de 7000 XPF."}
+        <br />
+        <span className="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+          </svg>
+          <span className="ml-2">en option</span>
+        </span>
+      </small>
+    </caption>
+  )
+}
+
+const Thead = () => {
+  return (
+    <thead>
+      <tr className="transition-0">
+        <th scope="col"></th>
+        <th scope="col">Particulier</th>
+        <th scope="col">Profesionnel</th>
+        <th scope="col">Entreprise</th>
+      </tr>
+    </thead>
+  )
+}
+
+const Tbody = () => {
+  return (
+    <tbody>
+      <Raoweb />
+      <Raobot />
+      <Raomail />
     </tbody>
   )
 }

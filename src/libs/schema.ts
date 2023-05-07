@@ -35,7 +35,7 @@ const hasOfferCatalog: OfferCatalog = {
         "Rao bot est un service de création de scripts d'automatisation personnalisés pour vos processus d'affaires. Économisez du temps et de l'argent en automatisant des tâches répétitives avec Rao bot.",
       image: [`${siteurl}/images/w-1.webp`],
       url: `${siteurl}/#rao-bot`,
-      price: 40000.0,
+      price: 150000.0,
       priceCurrency: "XPF",
     },
     {
@@ -55,7 +55,7 @@ const hasOfferCatalog: OfferCatalog = {
         "Rao web est un service de conception et de développement de sites web personnalisés pour votre entreprise. Obtenez un site web professionnel, rapide et performant qui reflète la personnalité et la mission de votre entreprise.",
       image: [`${siteurl}/images/w-2.webp`],
       url: `${siteurl}/#rao-web`,
-      price: 150000.0,
+      price: 40000.0,
       priceCurrency: "XPF",
     },
     {

@@ -2,7 +2,8 @@ export const siteurl = "https://www.rao-nagos.pf"
 export const sitename = "Rao nagos"
 export const rcs = "TPI 20 1100 A"
 export const fbAppId = "1089325565354845"
-export const fbPageId = "100085434258230"
+// 100085434258230
+export const fbPageId = "110036365182964"
 export const pwaId = "pf.rao-nagos.pwa"
 export const telephone = "+68987323795"
 export const description =

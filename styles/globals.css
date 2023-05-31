@@ -178,7 +178,7 @@
   }
 
   .card {
-    @apply p-4 md:p-8 w-full shadow-lg border border-primary-100 rounded-lg;
+    @apply p-4 md:p-8 w-full shadow-lg border border-primary-100 rounded-2xl;
     @apply hover:text-white hover:bg-primary-100 transition-colors duration-200 ease-in-out;
   }
 

@@ -72,7 +72,7 @@ const Footer: FC = () => {
           <Link href="/terms">Mentions légales</Link>
         </p>
         <p>
-          <Link href="/privacy">Politiques de confidentialité</Link>
+          <Link href="/privacy">Politique de confidentialité</Link>
         </p>
       </div>
     </footer>

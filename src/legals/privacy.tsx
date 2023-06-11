@@ -1,5 +1,4 @@
 import { siteurl } from "@libs/app"
-import Head from "next/head"
 import Link from "next/link"
 
 import type { FC } from "react"
@@ -7,7 +6,7 @@ import type { FC } from "react"
 const Component: FC = () => {
   return (
     <div className="mx-8 md:mx-32 lg:mx-64 ">
-      <h1 className="text-4xl">Politiques de confidentialité</h1>
+      <h1 className="text-4xl">Politique de confidentialité</h1>
       <p className="text-sm italic text-gray-500">mise à jour le 31 janvier 2023</p>
       <h2 className="text-xl font-semibold mt-24">ARTICLE 1&nbsp;: PRINCIPES GÉNÉRAUX EN MATIÈRE DE COLLECTE ET DE TRAITEMENT DE DONNÉES</h2>
       <p className="pt-4">

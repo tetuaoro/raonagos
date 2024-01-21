@@ -37,3 +37,6 @@ yarn-error.log*
 # sitemap
 /public/sitemap*
 /public/robot*
+
+# custom
+index.html

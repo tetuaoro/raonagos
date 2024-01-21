@@ -82,9 +82,9 @@ const Page: NextPage = () => {
         </Link>
         .
       </CookieConsent>
-      <Script id="shynet" src="https://analytics.rao-nagos.pf/ingress/7c202c1e-7850-4318-bb57-0e91fe6d6da4/script.js" />
+      <Script id="shynet" src="https://analytics.rao-nagos.pf/ingress/721280a6-cbd4-4fe6-bacd-6f11cbf92f46/script.js" />
       <noscript>
-        <Image src="https://analytics.rao-nagos.pf/ingress/7c202c1e-7850-4318-bb57-0e91fe6d6da4/pixel.gif" alt="analytics pixel for rao nagos" width={1} height={1} />
+        <Image src="https://analytics.rao-nagos.pf/ingress/721280a6-cbd4-4fe6-bacd-6f11cbf92f46/pixel.gif" alt="analytics pixel for rao nagos" width={1} height={1} />
       </noscript>
     </>
   )

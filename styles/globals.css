@@ -140,7 +140,7 @@
   /* Whatwedo */
 
   .work-items {
-    @apply flex flex-col items-center max-w-[501px] lg:max-w-none mx-auto lg:flex-row;
+    @apply flex flex-col items-center justify-center max-w-[501px] lg:max-w-none mx-auto lg:flex-row;
   }
 
   .overlay-image {
